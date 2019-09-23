@@ -1,0 +1,21 @@
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Dolittle. All rights reserved.
+ *  Licensed under the MIT License. See LICENSE in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+syntax = "proto3";
+
+import "Application/client_info.proto";
+import "google/protobuf/empty.proto";
+
+package dolittle.runtime.application.server;
+
+option csharp_namespace = "Dolittle.Runtime.Application.Grpc.Server";
+
+message ConnectionResult {
+    string status = 1;
+}
+
+// Represents the Client service
+service Clients {
+    rpc Connect(ClientInfo) returns(stream google.protobuf.Empty) {}
+}

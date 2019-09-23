@@ -1,0 +1,19 @@
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Dolittle. All rights reserved.
+ *  Licensed under the MIT License. See LICENSE in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+syntax = "proto3";
+
+package dolittle.events.relativity;
+
+import "Events.Relativity/interaction/open_tunnel.proto";
+import "Events.Relativity/interaction/committed_event_stream_with_context.proto";
+
+option csharp_namespace = "Dolittle.Runtime.Events.Relativity.Interaction.Grpc";
+
+// Represents the service for working with quantum tunnel
+service QuantumTunnelService {
+    rpc Open(OpenTunnel) returns (stream CommittedEventStreamWithContext) {}
+    
+}

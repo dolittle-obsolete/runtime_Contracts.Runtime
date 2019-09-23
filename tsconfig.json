@@ -1,0 +1,7 @@
+{
+    "files": [],
+    "references": [
+        {"path": "Source/Application.Grpc.JavaScript"},
+        {"path": "Source/Events.Relativity.Grpc.JavaScript"}
+    ]
+}
