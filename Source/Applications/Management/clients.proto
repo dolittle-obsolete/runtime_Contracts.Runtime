@@ -4,11 +4,11 @@
  *--------------------------------------------------------------------------------------------*/
 syntax = "proto3";
 
-import "Application/client_info.proto";
+import "Applications/client_info.proto";
 
-package dolittle.application.management;
+package dolittle.applications.management;
 
-option csharp_namespace = "Dolittle.Application.Management";
+option csharp_namespace = "Dolittle.Applications.Management";
 
 
 message ConnectedClientsRequest {

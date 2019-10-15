@@ -4,8 +4,8 @@
 
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
-        <AssemblyName>Dolittle.Application.Contracts</AssemblyName>
-        <DolittleProtoProject>../Application</DolittleProtoProject>
+        <AssemblyName>Dolittle.Applications.Contracts</AssemblyName>
+        <DolittleProtoProject>../Applications</DolittleProtoProject>
     </PropertyGroup>
     
     <ItemGroup>

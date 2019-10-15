@@ -6,9 +6,9 @@ syntax = "proto3";
 
 import "system/guid.proto";
 
-package dolittle.application;
+package dolittle.applications;
 
-option csharp_namespace = "Dolittle.Application";
+option csharp_namespace = "Dolittle.Applications";
 
 message ClientInfo {
     guid clientId = 1;
