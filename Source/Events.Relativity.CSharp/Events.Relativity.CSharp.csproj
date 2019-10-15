@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="../../Build/MSBuild/default.props" />
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <AssemblyName>Dolittle.Events.Relativity.Contracts</AssemblyName>
+        <DolittleProtoProject>../Events.Relativity</DolittleProtoProject>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <PackageReference Include="Dolittle.Protobuf.MSBuild" Version="1.*"/>
+        <PackageReference Include="Dolittle.System.Grpc" Version="3.*"/>
+    </ItemGroup>
+</Project>

@@ -2,18 +2,16 @@
  *  Copyright (c) Dolittle. All rights reserved.
  *  Licensed under the MIT License. See LICENSE in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
+
 syntax = "proto3";
 
-import "system/guid.proto";
+import "system/value.proto";
 
-package dolittle.application;
+package dolittle.events.relativity.microservice;
 
-option csharp_namespace = "Dolittle.Application";
+option csharp_namespace = "Dolittle.Runtime.Events.Relativity.Microservice";
 
-message ClientInfo {
-    guid clientId = 1;
-    string host = 2;
-    int32 port = 3;
-    string runtime = 4;
-    repeated string servicesByName = 5;
+// Represents the property bag
+message PropertyBag {
+    map<string, system.Value> values = 1;
 }

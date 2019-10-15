@@ -4,16 +4,18 @@
  *--------------------------------------------------------------------------------------------*/
 syntax = "proto3";
 
-import "system/guid.proto";
+import "Application/client_info.proto";
+import "google/protobuf/empty.proto";
 
-package dolittle.application;
+package dolittle.application.runtime;
 
-option csharp_namespace = "Dolittle.Application";
+option csharp_namespace = "Dolittle.Application.Runtime";
 
-message ClientInfo {
-    guid clientId = 1;
-    string host = 2;
-    int32 port = 3;
-    string runtime = 4;
-    repeated string servicesByName = 5;
+message ConnectionResult {
+    string status = 1;
+}
+
+// Represents the Client service
+service Clients {
+    rpc Connect(ClientInfo) returns(stream google.protobuf.Empty) {}
 }

@@ -5,9 +5,9 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{98EDF8E8-355B-4A85-8969-18A6223D212B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.Grpc.CSharp", "Source\Application.Grpc.CSharp\Application.Grpc.CSharp.csproj", "{B2743D19-4E7F-4BC3-A59C-64C0C018FD89}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.CSharp", "Source\Application.CSharp\Application.CSharp.csproj", "{B2743D19-4E7F-4BC3-A59C-64C0C018FD89}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Events.Relativity.Grpc.CSharp", "Source\Events.Relativity.Grpc.CSharp\Events.Relativity.Grpc.CSharp.csproj", "{0045D932-3E73-4ED6-8513-EBDF7B307BF5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Events.Relativity.CSharp", "Source\Events.Relativity.CSharp\Events.Relativity.CSharp.csproj", "{0045D932-3E73-4ED6-8513-EBDF7B307BF5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

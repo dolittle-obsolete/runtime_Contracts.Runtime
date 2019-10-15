@@ -1,0 +1,29 @@
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Dolittle. All rights reserved.
+ *  Licensed under the MIT License. See LICENSE in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+syntax = "proto3";
+
+import "Application/client_info.proto";
+
+package dolittle.application.management;
+
+option csharp_namespace = "Dolittle.Application.Management";
+
+
+message ConnectedClientsRequest {
+}
+
+message ConnectedClient {
+    ClientInfo Client = 1;
+    int64 ConnectionTime = 2;
+}
+
+message ConnectedClientsResponse {
+    repeated ConnectedClient Clients = 1;
+}
+
+// Represents the Client service
+service Clients {
+    rpc GetConnectedClients(ConnectedClientsRequest) returns(ConnectedClientsResponse) {}
+}
