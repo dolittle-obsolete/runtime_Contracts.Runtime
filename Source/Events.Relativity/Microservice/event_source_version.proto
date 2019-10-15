@@ -7,7 +7,7 @@ syntax = "proto3";
 
 package dolittle.events.relativity.microservice;
 
-option csharp_namespace = "Dolittle.Runtime.Events.Relativity.Microservice";
+option csharp_namespace = "Dolittle.Events.Relativity.Microservice";
 
 // Represents the version of an event source
 message EventSourceVersion {

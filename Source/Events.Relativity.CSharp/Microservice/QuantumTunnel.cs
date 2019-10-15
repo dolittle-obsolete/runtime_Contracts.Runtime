@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Dolittle.Runtime.Events.Relativity.Microservice {
+namespace Dolittle.Events.Relativity.Microservice {
 
   /// <summary>Holder for reflection information generated from Events.Relativity/Microservice/quantum_tunnel.proto</summary>
   public static partial class QuantumTunnelReflection {
@@ -32,10 +32,10 @@ namespace Dolittle.Runtime.Events.Relativity.Microservice {
             "YW50dW1UdW5uZWxTZXJ2aWNlEokBCgRPcGVuEjMuZG9saXR0bGUuZXZlbnRz",
             "LnJlbGF0aXZpdHkubWljcm9zZXJ2aWNlLk9wZW5UdW5uZWwaSC5kb2xpdHRs",
             "ZS5ldmVudHMucmVsYXRpdml0eS5taWNyb3NlcnZpY2UuQ29tbWl0dGVkRXZl",
-            "bnRTdHJlYW1XaXRoQ29udGV4dCIAMAFCMqoCL0RvbGl0dGxlLlJ1bnRpbWUu",
-            "RXZlbnRzLlJlbGF0aXZpdHkuTWljcm9zZXJ2aWNlYgZwcm90bzM="));
+            "bnRTdHJlYW1XaXRoQ29udGV4dCIAMAFCKqoCJ0RvbGl0dGxlLkV2ZW50cy5S",
+            "ZWxhdGl2aXR5Lk1pY3Jvc2VydmljZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Dolittle.Runtime.Events.Relativity.Microservice.OpenTunnelReflection.Descriptor, global::Dolittle.Runtime.Events.Relativity.Microservice.CommittedEventStreamWithContextReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Dolittle.Events.Relativity.Microservice.OpenTunnelReflection.Descriptor, global::Dolittle.Events.Relativity.Microservice.CommittedEventStreamWithContextReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null));
     }
     #endregion

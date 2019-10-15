@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Dolittle.Runtime.Events.Relativity.Microservice {
+namespace Dolittle.Events.Relativity.Microservice {
 
   /// <summary>Holder for reflection information generated from Events.Relativity/Microservice/original_context.proto</summary>
   public static partial class OriginalContextReflection {
@@ -32,13 +32,12 @@ namespace Dolittle.Runtime.Events.Relativity.Microservice {
             "ZWRDb250ZXh0GAIgASgLMg4uZG9saXR0bGUuZ3VpZBIeCgZ0ZW5hbnQYAyAB",
             "KAsyDi5kb2xpdHRsZS5ndWlkEhMKC2Vudmlyb25tZW50GAQgASgJEj4KBmNs",
             "YWltcxgFIAMoCzIuLmRvbGl0dGxlLmV2ZW50cy5yZWxhdGl2aXR5Lm1pY3Jv",
-            "c2VydmljZS5DbGFpbRIWCg5jb21taXRJbk9yaWdpbhgGIAEoBEIyqgIvRG9s",
-            "aXR0bGUuUnVudGltZS5FdmVudHMuUmVsYXRpdml0eS5NaWNyb3NlcnZpY2Vi",
-            "BnByb3RvMw=="));
+            "c2VydmljZS5DbGFpbRIWCg5jb21taXRJbk9yaWdpbhgGIAEoBEIqqgInRG9s",
+            "aXR0bGUuRXZlbnRzLlJlbGF0aXZpdHkuTWljcm9zZXJ2aWNlYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::System.Protobuf.GuidReflection.Descriptor, global::Dolittle.Runtime.Events.Relativity.Microservice.ClaimReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::System.Protobuf.GuidReflection.Descriptor, global::Dolittle.Events.Relativity.Microservice.ClaimReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Dolittle.Runtime.Events.Relativity.Microservice.OriginalContext), global::Dolittle.Runtime.Events.Relativity.Microservice.OriginalContext.Parser, new[]{ "Application", "BoundedContext", "Tenant", "Environment", "Claims", "CommitInOrigin" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Dolittle.Events.Relativity.Microservice.OriginalContext), global::Dolittle.Events.Relativity.Microservice.OriginalContext.Parser, new[]{ "Application", "BoundedContext", "Tenant", "Environment", "Claims", "CommitInOrigin" }, null, null, null)
           }));
     }
     #endregion
@@ -56,7 +55,7 @@ namespace Dolittle.Runtime.Events.Relativity.Microservice {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Dolittle.Runtime.Events.Relativity.Microservice.OriginalContextReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Dolittle.Events.Relativity.Microservice.OriginalContextReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -133,11 +132,11 @@ namespace Dolittle.Runtime.Events.Relativity.Microservice {
 
     /// <summary>Field number for the "claims" field.</summary>
     public const int ClaimsFieldNumber = 5;
-    private static readonly pb::FieldCodec<global::Dolittle.Runtime.Events.Relativity.Microservice.Claim> _repeated_claims_codec
-        = pb::FieldCodec.ForMessage(42, global::Dolittle.Runtime.Events.Relativity.Microservice.Claim.Parser);
-    private readonly pbc::RepeatedField<global::Dolittle.Runtime.Events.Relativity.Microservice.Claim> claims_ = new pbc::RepeatedField<global::Dolittle.Runtime.Events.Relativity.Microservice.Claim>();
+    private static readonly pb::FieldCodec<global::Dolittle.Events.Relativity.Microservice.Claim> _repeated_claims_codec
+        = pb::FieldCodec.ForMessage(42, global::Dolittle.Events.Relativity.Microservice.Claim.Parser);
+    private readonly pbc::RepeatedField<global::Dolittle.Events.Relativity.Microservice.Claim> claims_ = new pbc::RepeatedField<global::Dolittle.Events.Relativity.Microservice.Claim>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Dolittle.Runtime.Events.Relativity.Microservice.Claim> Claims {
+    public pbc::RepeatedField<global::Dolittle.Events.Relativity.Microservice.Claim> Claims {
       get { return claims_; }
     }
 

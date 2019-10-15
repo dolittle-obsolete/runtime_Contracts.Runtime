@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Dolittle.Runtime.Events.Relativity.Microservice {
+namespace Dolittle.Events.Relativity.Microservice {
 
   /// <summary>Holder for reflection information generated from Events.Relativity/Microservice/versioned_event_source.proto</summary>
   public static partial class VersionedEventSourceReflection {
@@ -31,13 +31,13 @@ namespace Dolittle.Runtime.Events.Relativity.Microservice {
             "IqsBChRWZXJzaW9uZWRFdmVudFNvdXJjZRJMCgd2ZXJzaW9uGAEgASgLMjsu",
             "ZG9saXR0bGUuZXZlbnRzLnJlbGF0aXZpdHkubWljcm9zZXJ2aWNlLkV2ZW50",
             "U291cmNlVmVyc2lvbhIjCgtldmVudFNvdXJjZRgCIAEoCzIOLmRvbGl0dGxl",
-            "Lmd1aWQSIAoIYXJ0aWZhY3QYAyABKAsyDi5kb2xpdHRsZS5ndWlkQjKqAi9E",
-            "b2xpdHRsZS5SdW50aW1lLkV2ZW50cy5SZWxhdGl2aXR5Lk1pY3Jvc2Vydmlj",
-            "ZWIGcHJvdG8z"));
+            "Lmd1aWQSIAoIYXJ0aWZhY3QYAyABKAsyDi5kb2xpdHRsZS5ndWlkQiqqAidE",
+            "b2xpdHRsZS5FdmVudHMuUmVsYXRpdml0eS5NaWNyb3NlcnZpY2ViBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::System.Protobuf.GuidReflection.Descriptor, global::Dolittle.Runtime.Events.Relativity.Microservice.EventSourceVersionReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::System.Protobuf.GuidReflection.Descriptor, global::Dolittle.Events.Relativity.Microservice.EventSourceVersionReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Dolittle.Runtime.Events.Relativity.Microservice.VersionedEventSource), global::Dolittle.Runtime.Events.Relativity.Microservice.VersionedEventSource.Parser, new[]{ "Version", "EventSource", "Artifact" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Dolittle.Events.Relativity.Microservice.VersionedEventSource), global::Dolittle.Events.Relativity.Microservice.VersionedEventSource.Parser, new[]{ "Version", "EventSource", "Artifact" }, null, null, null)
           }));
     }
     #endregion
@@ -55,7 +55,7 @@ namespace Dolittle.Runtime.Events.Relativity.Microservice {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Dolittle.Runtime.Events.Relativity.Microservice.VersionedEventSourceReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Dolittle.Events.Relativity.Microservice.VersionedEventSourceReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -85,9 +85,9 @@ namespace Dolittle.Runtime.Events.Relativity.Microservice {
 
     /// <summary>Field number for the "version" field.</summary>
     public const int VersionFieldNumber = 1;
-    private global::Dolittle.Runtime.Events.Relativity.Microservice.EventSourceVersion version_;
+    private global::Dolittle.Events.Relativity.Microservice.EventSourceVersion version_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Dolittle.Runtime.Events.Relativity.Microservice.EventSourceVersion Version {
+    public global::Dolittle.Events.Relativity.Microservice.EventSourceVersion Version {
       get { return version_; }
       set {
         version_ = value;
@@ -196,7 +196,7 @@ namespace Dolittle.Runtime.Events.Relativity.Microservice {
       }
       if (other.version_ != null) {
         if (version_ == null) {
-          Version = new global::Dolittle.Runtime.Events.Relativity.Microservice.EventSourceVersion();
+          Version = new global::Dolittle.Events.Relativity.Microservice.EventSourceVersion();
         }
         Version.MergeFrom(other.Version);
       }
@@ -225,7 +225,7 @@ namespace Dolittle.Runtime.Events.Relativity.Microservice {
             break;
           case 10: {
             if (version_ == null) {
-              Version = new global::Dolittle.Runtime.Events.Relativity.Microservice.EventSourceVersion();
+              Version = new global::Dolittle.Events.Relativity.Microservice.EventSourceVersion();
             }
             input.ReadMessage(Version);
             break;

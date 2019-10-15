@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Dolittle.Runtime.Events.Relativity.Microservice {
+namespace Dolittle.Events.Relativity.Microservice {
 
   /// <summary>Holder for reflection information generated from Events.Relativity/Microservice/execution_context.proto</summary>
   public static partial class ExecutionContextReflection {
@@ -33,12 +33,12 @@ namespace Dolittle.Runtime.Events.Relativity.Microservice {
             "IAEoCzIOLmRvbGl0dGxlLmd1aWQSJQoNY29ycmVsYXRpb25JZBgEIAEoCzIO",
             "LmRvbGl0dGxlLmd1aWQSEwoLZW52aXJvbm1lbnQYBSABKAkSPgoGY2xhaW1z",
             "GAYgAygLMi4uZG9saXR0bGUuZXZlbnRzLnJlbGF0aXZpdHkubWljcm9zZXJ2",
-            "aWNlLkNsYWltEg8KB2N1bHR1cmUYByABKAlCMqoCL0RvbGl0dGxlLlJ1bnRp",
-            "bWUuRXZlbnRzLlJlbGF0aXZpdHkuTWljcm9zZXJ2aWNlYgZwcm90bzM="));
+            "aWNlLkNsYWltEg8KB2N1bHR1cmUYByABKAlCKqoCJ0RvbGl0dGxlLkV2ZW50",
+            "cy5SZWxhdGl2aXR5Lk1pY3Jvc2VydmljZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::System.Protobuf.GuidReflection.Descriptor, global::Dolittle.Runtime.Events.Relativity.Microservice.ClaimReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::System.Protobuf.GuidReflection.Descriptor, global::Dolittle.Events.Relativity.Microservice.ClaimReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Dolittle.Runtime.Events.Relativity.Microservice.ExecutionContext), global::Dolittle.Runtime.Events.Relativity.Microservice.ExecutionContext.Parser, new[]{ "Application", "BoundedContext", "Tenant", "CorrelationId", "Environment", "Claims", "Culture" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Dolittle.Events.Relativity.Microservice.ExecutionContext), global::Dolittle.Events.Relativity.Microservice.ExecutionContext.Parser, new[]{ "Application", "BoundedContext", "Tenant", "CorrelationId", "Environment", "Claims", "Culture" }, null, null, null)
           }));
     }
     #endregion
@@ -56,7 +56,7 @@ namespace Dolittle.Runtime.Events.Relativity.Microservice {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Dolittle.Runtime.Events.Relativity.Microservice.ExecutionContextReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Dolittle.Events.Relativity.Microservice.ExecutionContextReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -145,11 +145,11 @@ namespace Dolittle.Runtime.Events.Relativity.Microservice {
 
     /// <summary>Field number for the "claims" field.</summary>
     public const int ClaimsFieldNumber = 6;
-    private static readonly pb::FieldCodec<global::Dolittle.Runtime.Events.Relativity.Microservice.Claim> _repeated_claims_codec
-        = pb::FieldCodec.ForMessage(50, global::Dolittle.Runtime.Events.Relativity.Microservice.Claim.Parser);
-    private readonly pbc::RepeatedField<global::Dolittle.Runtime.Events.Relativity.Microservice.Claim> claims_ = new pbc::RepeatedField<global::Dolittle.Runtime.Events.Relativity.Microservice.Claim>();
+    private static readonly pb::FieldCodec<global::Dolittle.Events.Relativity.Microservice.Claim> _repeated_claims_codec
+        = pb::FieldCodec.ForMessage(50, global::Dolittle.Events.Relativity.Microservice.Claim.Parser);
+    private readonly pbc::RepeatedField<global::Dolittle.Events.Relativity.Microservice.Claim> claims_ = new pbc::RepeatedField<global::Dolittle.Events.Relativity.Microservice.Claim>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Dolittle.Runtime.Events.Relativity.Microservice.Claim> Claims {
+    public pbc::RepeatedField<global::Dolittle.Events.Relativity.Microservice.Claim> Claims {
       get { return claims_; }
     }
 

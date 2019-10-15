@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Dolittle.Runtime.Events.Relativity.Microservice {
+namespace Dolittle.Events.Relativity.Microservice {
 
   /// <summary>Holder for reflection information generated from Events.Relativity/Microservice/artifact.proto</summary>
   public static partial class ArtifactReflection {
@@ -27,13 +27,12 @@ namespace Dolittle.Runtime.Events.Relativity.Microservice {
             "Ci1FdmVudHMuUmVsYXRpdml0eS9NaWNyb3NlcnZpY2UvYXJ0aWZhY3QucHJv",
             "dG8SJ2RvbGl0dGxlLmV2ZW50cy5yZWxhdGl2aXR5Lm1pY3Jvc2VydmljZRoR",
             "c3lzdGVtL2d1aWQucHJvdG8iOgoIQXJ0aWZhY3QSGgoCaWQYASABKAsyDi5k",
-            "b2xpdHRsZS5ndWlkEhIKCmdlbmVyYXRpb24YAiABKAVCMqoCL0RvbGl0dGxl",
-            "LlJ1bnRpbWUuRXZlbnRzLlJlbGF0aXZpdHkuTWljcm9zZXJ2aWNlYgZwcm90",
-            "bzM="));
+            "b2xpdHRsZS5ndWlkEhIKCmdlbmVyYXRpb24YAiABKAVCKqoCJ0RvbGl0dGxl",
+            "LkV2ZW50cy5SZWxhdGl2aXR5Lk1pY3Jvc2VydmljZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::System.Protobuf.GuidReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Dolittle.Runtime.Events.Relativity.Microservice.Artifact), global::Dolittle.Runtime.Events.Relativity.Microservice.Artifact.Parser, new[]{ "Id", "Generation" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Dolittle.Events.Relativity.Microservice.Artifact), global::Dolittle.Events.Relativity.Microservice.Artifact.Parser, new[]{ "Id", "Generation" }, null, null, null)
           }));
     }
     #endregion
@@ -51,7 +50,7 @@ namespace Dolittle.Runtime.Events.Relativity.Microservice {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Dolittle.Runtime.Events.Relativity.Microservice.ArtifactReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Dolittle.Events.Relativity.Microservice.ArtifactReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

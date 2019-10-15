@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Dolittle.Runtime.Events.Relativity.Microservice {
+namespace Dolittle.Events.Relativity.Microservice {
 
   /// <summary>Holder for reflection information generated from Events.Relativity/Microservice/event_metadata.proto</summary>
   public static partial class EventMetadataReflection {
@@ -37,12 +37,12 @@ namespace Dolittle.Runtime.Events.Relativity.Microservice {
             "cnRpZmFjdBgEIAEoCzIxLmRvbGl0dGxlLmV2ZW50cy5yZWxhdGl2aXR5Lm1p",
             "Y3Jvc2VydmljZS5BcnRpZmFjdBIQCghvY2N1cnJlZBgFIAEoAxJRCg9vcmln",
             "aW5hbENvbnRleHQYBiABKAsyOC5kb2xpdHRsZS5ldmVudHMucmVsYXRpdml0",
-            "eS5taWNyb3NlcnZpY2UuT3JpZ2luYWxDb250ZXh0QjKqAi9Eb2xpdHRsZS5S",
-            "dW50aW1lLkV2ZW50cy5SZWxhdGl2aXR5Lk1pY3Jvc2VydmljZWIGcHJvdG8z"));
+            "eS5taWNyb3NlcnZpY2UuT3JpZ2luYWxDb250ZXh0QiqqAidEb2xpdHRsZS5F",
+            "dmVudHMuUmVsYXRpdml0eS5NaWNyb3NlcnZpY2ViBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::System.Protobuf.GuidReflection.Descriptor, global::Dolittle.Runtime.Events.Relativity.Microservice.ArtifactReflection.Descriptor, global::Dolittle.Runtime.Events.Relativity.Microservice.VersionedEventSourceReflection.Descriptor, global::Dolittle.Runtime.Events.Relativity.Microservice.OriginalContextReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::System.Protobuf.GuidReflection.Descriptor, global::Dolittle.Events.Relativity.Microservice.ArtifactReflection.Descriptor, global::Dolittle.Events.Relativity.Microservice.VersionedEventSourceReflection.Descriptor, global::Dolittle.Events.Relativity.Microservice.OriginalContextReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Dolittle.Runtime.Events.Relativity.Microservice.EventMetadata), global::Dolittle.Runtime.Events.Relativity.Microservice.EventMetadata.Parser, new[]{ "EventId", "Source", "CorrelationId", "Artifact", "Occurred", "OriginalContext" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Dolittle.Events.Relativity.Microservice.EventMetadata), global::Dolittle.Events.Relativity.Microservice.EventMetadata.Parser, new[]{ "EventId", "Source", "CorrelationId", "Artifact", "Occurred", "OriginalContext" }, null, null, null)
           }));
     }
     #endregion
@@ -60,7 +60,7 @@ namespace Dolittle.Runtime.Events.Relativity.Microservice {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Dolittle.Runtime.Events.Relativity.Microservice.EventMetadataReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Dolittle.Events.Relativity.Microservice.EventMetadataReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -104,9 +104,9 @@ namespace Dolittle.Runtime.Events.Relativity.Microservice {
 
     /// <summary>Field number for the "source" field.</summary>
     public const int SourceFieldNumber = 2;
-    private global::Dolittle.Runtime.Events.Relativity.Microservice.VersionedEventSource source_;
+    private global::Dolittle.Events.Relativity.Microservice.VersionedEventSource source_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Dolittle.Runtime.Events.Relativity.Microservice.VersionedEventSource Source {
+    public global::Dolittle.Events.Relativity.Microservice.VersionedEventSource Source {
       get { return source_; }
       set {
         source_ = value;
@@ -126,9 +126,9 @@ namespace Dolittle.Runtime.Events.Relativity.Microservice {
 
     /// <summary>Field number for the "artifact" field.</summary>
     public const int ArtifactFieldNumber = 4;
-    private global::Dolittle.Runtime.Events.Relativity.Microservice.Artifact artifact_;
+    private global::Dolittle.Events.Relativity.Microservice.Artifact artifact_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Dolittle.Runtime.Events.Relativity.Microservice.Artifact Artifact {
+    public global::Dolittle.Events.Relativity.Microservice.Artifact Artifact {
       get { return artifact_; }
       set {
         artifact_ = value;
@@ -148,9 +148,9 @@ namespace Dolittle.Runtime.Events.Relativity.Microservice {
 
     /// <summary>Field number for the "originalContext" field.</summary>
     public const int OriginalContextFieldNumber = 6;
-    private global::Dolittle.Runtime.Events.Relativity.Microservice.OriginalContext originalContext_;
+    private global::Dolittle.Events.Relativity.Microservice.OriginalContext originalContext_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Dolittle.Runtime.Events.Relativity.Microservice.OriginalContext OriginalContext {
+    public global::Dolittle.Events.Relativity.Microservice.OriginalContext OriginalContext {
       get { return originalContext_; }
       set {
         originalContext_ = value;
@@ -270,7 +270,7 @@ namespace Dolittle.Runtime.Events.Relativity.Microservice {
       }
       if (other.source_ != null) {
         if (source_ == null) {
-          Source = new global::Dolittle.Runtime.Events.Relativity.Microservice.VersionedEventSource();
+          Source = new global::Dolittle.Events.Relativity.Microservice.VersionedEventSource();
         }
         Source.MergeFrom(other.Source);
       }
@@ -282,7 +282,7 @@ namespace Dolittle.Runtime.Events.Relativity.Microservice {
       }
       if (other.artifact_ != null) {
         if (artifact_ == null) {
-          Artifact = new global::Dolittle.Runtime.Events.Relativity.Microservice.Artifact();
+          Artifact = new global::Dolittle.Events.Relativity.Microservice.Artifact();
         }
         Artifact.MergeFrom(other.Artifact);
       }
@@ -291,7 +291,7 @@ namespace Dolittle.Runtime.Events.Relativity.Microservice {
       }
       if (other.originalContext_ != null) {
         if (originalContext_ == null) {
-          OriginalContext = new global::Dolittle.Runtime.Events.Relativity.Microservice.OriginalContext();
+          OriginalContext = new global::Dolittle.Events.Relativity.Microservice.OriginalContext();
         }
         OriginalContext.MergeFrom(other.OriginalContext);
       }
@@ -315,7 +315,7 @@ namespace Dolittle.Runtime.Events.Relativity.Microservice {
           }
           case 18: {
             if (source_ == null) {
-              Source = new global::Dolittle.Runtime.Events.Relativity.Microservice.VersionedEventSource();
+              Source = new global::Dolittle.Events.Relativity.Microservice.VersionedEventSource();
             }
             input.ReadMessage(Source);
             break;
@@ -329,7 +329,7 @@ namespace Dolittle.Runtime.Events.Relativity.Microservice {
           }
           case 34: {
             if (artifact_ == null) {
-              Artifact = new global::Dolittle.Runtime.Events.Relativity.Microservice.Artifact();
+              Artifact = new global::Dolittle.Events.Relativity.Microservice.Artifact();
             }
             input.ReadMessage(Artifact);
             break;
@@ -340,7 +340,7 @@ namespace Dolittle.Runtime.Events.Relativity.Microservice {
           }
           case 50: {
             if (originalContext_ == null) {
-              OriginalContext = new global::Dolittle.Runtime.Events.Relativity.Microservice.OriginalContext();
+              OriginalContext = new global::Dolittle.Events.Relativity.Microservice.OriginalContext();
             }
             input.ReadMessage(OriginalContext);
             break;

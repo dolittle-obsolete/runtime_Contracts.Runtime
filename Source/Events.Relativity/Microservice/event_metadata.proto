@@ -12,7 +12,7 @@ import "Events.Relativity/Microservice/original_context.proto";
 
 package dolittle.events.relativity.microservice;
 
-option csharp_namespace = "Dolittle.Runtime.Events.Relativity.Microservice";
+option csharp_namespace = "Dolittle.Events.Relativity.Microservice";
 
 // Represents the metadata related to an event
 message EventMetadata {

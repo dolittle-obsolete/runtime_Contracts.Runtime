@@ -13,7 +13,7 @@
 
 using grpc = global::Grpc.Core;
 
-namespace Dolittle.Runtime.Events.Relativity.Microservice {
+namespace Dolittle.Events.Relativity.Microservice {
   /// <summary>
   /// Represents the service for working with quantum tunnel
   /// </summary>
@@ -21,10 +21,10 @@ namespace Dolittle.Runtime.Events.Relativity.Microservice {
   {
     static readonly string __ServiceName = "dolittle.events.relativity.microservice.QuantumTunnelService";
 
-    static readonly grpc::Marshaller<global::Dolittle.Runtime.Events.Relativity.Microservice.OpenTunnel> __Marshaller_dolittle_events_relativity_microservice_OpenTunnel = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Dolittle.Runtime.Events.Relativity.Microservice.OpenTunnel.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Dolittle.Runtime.Events.Relativity.Microservice.CommittedEventStreamWithContext> __Marshaller_dolittle_events_relativity_microservice_CommittedEventStreamWithContext = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Dolittle.Runtime.Events.Relativity.Microservice.CommittedEventStreamWithContext.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Dolittle.Events.Relativity.Microservice.OpenTunnel> __Marshaller_dolittle_events_relativity_microservice_OpenTunnel = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Dolittle.Events.Relativity.Microservice.OpenTunnel.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Dolittle.Events.Relativity.Microservice.CommittedEventStreamWithContext> __Marshaller_dolittle_events_relativity_microservice_CommittedEventStreamWithContext = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Dolittle.Events.Relativity.Microservice.CommittedEventStreamWithContext.Parser.ParseFrom);
 
-    static readonly grpc::Method<global::Dolittle.Runtime.Events.Relativity.Microservice.OpenTunnel, global::Dolittle.Runtime.Events.Relativity.Microservice.CommittedEventStreamWithContext> __Method_Open = new grpc::Method<global::Dolittle.Runtime.Events.Relativity.Microservice.OpenTunnel, global::Dolittle.Runtime.Events.Relativity.Microservice.CommittedEventStreamWithContext>(
+    static readonly grpc::Method<global::Dolittle.Events.Relativity.Microservice.OpenTunnel, global::Dolittle.Events.Relativity.Microservice.CommittedEventStreamWithContext> __Method_Open = new grpc::Method<global::Dolittle.Events.Relativity.Microservice.OpenTunnel, global::Dolittle.Events.Relativity.Microservice.CommittedEventStreamWithContext>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
         "Open",
@@ -34,14 +34,14 @@ namespace Dolittle.Runtime.Events.Relativity.Microservice {
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
-      get { return global::Dolittle.Runtime.Events.Relativity.Microservice.QuantumTunnelReflection.Descriptor.Services[0]; }
+      get { return global::Dolittle.Events.Relativity.Microservice.QuantumTunnelReflection.Descriptor.Services[0]; }
     }
 
     /// <summary>Base class for server-side implementations of QuantumTunnelService</summary>
     [grpc::BindServiceMethod(typeof(QuantumTunnelService), "BindService")]
     public abstract partial class QuantumTunnelServiceBase
     {
-      public virtual global::System.Threading.Tasks.Task Open(global::Dolittle.Runtime.Events.Relativity.Microservice.OpenTunnel request, grpc::IServerStreamWriter<global::Dolittle.Runtime.Events.Relativity.Microservice.CommittedEventStreamWithContext> responseStream, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task Open(global::Dolittle.Events.Relativity.Microservice.OpenTunnel request, grpc::IServerStreamWriter<global::Dolittle.Events.Relativity.Microservice.CommittedEventStreamWithContext> responseStream, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -71,11 +71,11 @@ namespace Dolittle.Runtime.Events.Relativity.Microservice {
       {
       }
 
-      public virtual grpc::AsyncServerStreamingCall<global::Dolittle.Runtime.Events.Relativity.Microservice.CommittedEventStreamWithContext> Open(global::Dolittle.Runtime.Events.Relativity.Microservice.OpenTunnel request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncServerStreamingCall<global::Dolittle.Events.Relativity.Microservice.CommittedEventStreamWithContext> Open(global::Dolittle.Events.Relativity.Microservice.OpenTunnel request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return Open(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual grpc::AsyncServerStreamingCall<global::Dolittle.Runtime.Events.Relativity.Microservice.CommittedEventStreamWithContext> Open(global::Dolittle.Runtime.Events.Relativity.Microservice.OpenTunnel request, grpc::CallOptions options)
+      public virtual grpc::AsyncServerStreamingCall<global::Dolittle.Events.Relativity.Microservice.CommittedEventStreamWithContext> Open(global::Dolittle.Events.Relativity.Microservice.OpenTunnel request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_Open, null, options, request);
       }
@@ -100,7 +100,7 @@ namespace Dolittle.Runtime.Events.Relativity.Microservice {
     /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
     public static void BindService(grpc::ServiceBinderBase serviceBinder, QuantumTunnelServiceBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_Open, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Dolittle.Runtime.Events.Relativity.Microservice.OpenTunnel, global::Dolittle.Runtime.Events.Relativity.Microservice.CommittedEventStreamWithContext>(serviceImpl.Open));
+      serviceBinder.AddMethod(__Method_Open, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Dolittle.Events.Relativity.Microservice.OpenTunnel, global::Dolittle.Events.Relativity.Microservice.CommittedEventStreamWithContext>(serviceImpl.Open));
     }
 
   }

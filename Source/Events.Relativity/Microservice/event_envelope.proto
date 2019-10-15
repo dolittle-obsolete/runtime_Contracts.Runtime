@@ -10,7 +10,7 @@ import "Events.Relativity/Microservice/property_bag.proto";
 
 package dolittle.events.relativity.microservice;
 
-option csharp_namespace = "Dolittle.Runtime.Events.Relativity.Microservice";
+option csharp_namespace = "Dolittle.Events.Relativity.Microservice";
 
 // Represents an event
 message EventEnvelope {

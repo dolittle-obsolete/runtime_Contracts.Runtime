@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Dolittle.Runtime.Events.Relativity.Microservice {
+namespace Dolittle.Events.Relativity.Microservice {
 
   /// <summary>Holder for reflection information generated from Events.Relativity/Microservice/tenant_offset.proto</summary>
   public static partial class TenantOffsetReflection {
@@ -27,13 +27,13 @@ namespace Dolittle.Runtime.Events.Relativity.Microservice {
             "CjJFdmVudHMuUmVsYXRpdml0eS9NaWNyb3NlcnZpY2UvdGVuYW50X29mZnNl",
             "dC5wcm90bxInZG9saXR0bGUuZXZlbnRzLnJlbGF0aXZpdHkubWljcm9zZXJ2",
             "aWNlGhFzeXN0ZW0vZ3VpZC5wcm90byI+CgxUZW5hbnRPZmZzZXQSHgoGdGVu",
-            "YW50GAEgASgLMg4uZG9saXR0bGUuZ3VpZBIOCgZvZmZzZXQYAiABKARCMqoC",
-            "L0RvbGl0dGxlLlJ1bnRpbWUuRXZlbnRzLlJlbGF0aXZpdHkuTWljcm9zZXJ2",
-            "aWNlYgZwcm90bzM="));
+            "YW50GAEgASgLMg4uZG9saXR0bGUuZ3VpZBIOCgZvZmZzZXQYAiABKARCKqoC",
+            "J0RvbGl0dGxlLkV2ZW50cy5SZWxhdGl2aXR5Lk1pY3Jvc2VydmljZWIGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::System.Protobuf.GuidReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Dolittle.Runtime.Events.Relativity.Microservice.TenantOffset), global::Dolittle.Runtime.Events.Relativity.Microservice.TenantOffset.Parser, new[]{ "Tenant", "Offset" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Dolittle.Events.Relativity.Microservice.TenantOffset), global::Dolittle.Events.Relativity.Microservice.TenantOffset.Parser, new[]{ "Tenant", "Offset" }, null, null, null)
           }));
     }
     #endregion
@@ -51,7 +51,7 @@ namespace Dolittle.Runtime.Events.Relativity.Microservice {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Dolittle.Runtime.Events.Relativity.Microservice.TenantOffsetReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Dolittle.Events.Relativity.Microservice.TenantOffsetReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

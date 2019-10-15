@@ -9,7 +9,7 @@ package dolittle.events.relativity.microservice;
 import "system/guid.proto";
 import "Events.Relativity/Microservice/claim.proto";
 
-option csharp_namespace = "Dolittle.Runtime.Events.Relativity.Microservice";
+option csharp_namespace = "Dolittle.Events.Relativity.Microservice";
 
 // Represents the original context
 message OriginalContext {

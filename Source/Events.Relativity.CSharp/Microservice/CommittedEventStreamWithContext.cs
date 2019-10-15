@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Dolittle.Runtime.Events.Relativity.Microservice {
+namespace Dolittle.Events.Relativity.Microservice {
 
   /// <summary>Holder for reflection information generated from Events.Relativity/Microservice/committed_event_stream_with_context.proto</summary>
   public static partial class CommittedEventStreamWithContextReflection {
@@ -33,12 +33,12 @@ namespace Dolittle.Runtime.Events.Relativity.Microservice {
             "CgZjb21taXQYASABKAsyPS5kb2xpdHRsZS5ldmVudHMucmVsYXRpdml0eS5t",
             "aWNyb3NlcnZpY2UuQ29tbWl0dGVkRXZlbnRTdHJlYW0SSgoHY29udGV4dBgC",
             "IAEoCzI5LmRvbGl0dGxlLmV2ZW50cy5yZWxhdGl2aXR5Lm1pY3Jvc2Vydmlj",
-            "ZS5FeGVjdXRpb25Db250ZXh0QjKqAi9Eb2xpdHRsZS5SdW50aW1lLkV2ZW50",
-            "cy5SZWxhdGl2aXR5Lk1pY3Jvc2VydmljZWIGcHJvdG8z"));
+            "ZS5FeGVjdXRpb25Db250ZXh0QiqqAidEb2xpdHRsZS5FdmVudHMuUmVsYXRp",
+            "dml0eS5NaWNyb3NlcnZpY2ViBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Dolittle.Runtime.Events.Relativity.Microservice.CommittedEventStreamReflection.Descriptor, global::Dolittle.Runtime.Events.Relativity.Microservice.ExecutionContextReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Dolittle.Events.Relativity.Microservice.CommittedEventStreamReflection.Descriptor, global::Dolittle.Events.Relativity.Microservice.ExecutionContextReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Dolittle.Runtime.Events.Relativity.Microservice.CommittedEventStreamWithContext), global::Dolittle.Runtime.Events.Relativity.Microservice.CommittedEventStreamWithContext.Parser, new[]{ "Commit", "Context" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Dolittle.Events.Relativity.Microservice.CommittedEventStreamWithContext), global::Dolittle.Events.Relativity.Microservice.CommittedEventStreamWithContext.Parser, new[]{ "Commit", "Context" }, null, null, null)
           }));
     }
     #endregion
@@ -56,7 +56,7 @@ namespace Dolittle.Runtime.Events.Relativity.Microservice {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Dolittle.Runtime.Events.Relativity.Microservice.CommittedEventStreamWithContextReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Dolittle.Events.Relativity.Microservice.CommittedEventStreamWithContextReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -85,9 +85,9 @@ namespace Dolittle.Runtime.Events.Relativity.Microservice {
 
     /// <summary>Field number for the "commit" field.</summary>
     public const int CommitFieldNumber = 1;
-    private global::Dolittle.Runtime.Events.Relativity.Microservice.CommittedEventStream commit_;
+    private global::Dolittle.Events.Relativity.Microservice.CommittedEventStream commit_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Dolittle.Runtime.Events.Relativity.Microservice.CommittedEventStream Commit {
+    public global::Dolittle.Events.Relativity.Microservice.CommittedEventStream Commit {
       get { return commit_; }
       set {
         commit_ = value;
@@ -96,9 +96,9 @@ namespace Dolittle.Runtime.Events.Relativity.Microservice {
 
     /// <summary>Field number for the "context" field.</summary>
     public const int ContextFieldNumber = 2;
-    private global::Dolittle.Runtime.Events.Relativity.Microservice.ExecutionContext context_;
+    private global::Dolittle.Events.Relativity.Microservice.ExecutionContext context_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Dolittle.Runtime.Events.Relativity.Microservice.ExecutionContext Context {
+    public global::Dolittle.Events.Relativity.Microservice.ExecutionContext Context {
       get { return context_; }
       set {
         context_ = value;
@@ -176,13 +176,13 @@ namespace Dolittle.Runtime.Events.Relativity.Microservice {
       }
       if (other.commit_ != null) {
         if (commit_ == null) {
-          Commit = new global::Dolittle.Runtime.Events.Relativity.Microservice.CommittedEventStream();
+          Commit = new global::Dolittle.Events.Relativity.Microservice.CommittedEventStream();
         }
         Commit.MergeFrom(other.Commit);
       }
       if (other.context_ != null) {
         if (context_ == null) {
-          Context = new global::Dolittle.Runtime.Events.Relativity.Microservice.ExecutionContext();
+          Context = new global::Dolittle.Events.Relativity.Microservice.ExecutionContext();
         }
         Context.MergeFrom(other.Context);
       }
@@ -199,14 +199,14 @@ namespace Dolittle.Runtime.Events.Relativity.Microservice {
             break;
           case 10: {
             if (commit_ == null) {
-              Commit = new global::Dolittle.Runtime.Events.Relativity.Microservice.CommittedEventStream();
+              Commit = new global::Dolittle.Events.Relativity.Microservice.CommittedEventStream();
             }
             input.ReadMessage(Commit);
             break;
           }
           case 18: {
             if (context_ == null) {
-              Context = new global::Dolittle.Runtime.Events.Relativity.Microservice.ExecutionContext();
+              Context = new global::Dolittle.Events.Relativity.Microservice.ExecutionContext();
             }
             input.ReadMessage(Context);
             break;

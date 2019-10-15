@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Dolittle.Runtime.Events.Relativity.Microservice {
+namespace Dolittle.Events.Relativity.Microservice {
 
   /// <summary>Holder for reflection information generated from Events.Relativity/Microservice/claim.proto</summary>
   public static partial class ClaimReflection {
@@ -27,12 +27,12 @@ namespace Dolittle.Runtime.Events.Relativity.Microservice {
             "CipFdmVudHMuUmVsYXRpdml0eS9NaWNyb3NlcnZpY2UvY2xhaW0ucHJvdG8S",
             "J2RvbGl0dGxlLmV2ZW50cy5yZWxhdGl2aXR5Lm1pY3Jvc2VydmljZSI3CgVD",
             "bGFpbRIMCgRuYW1lGAEgASgJEg0KBXZhbHVlGAIgASgJEhEKCXZhbHVlVHlw",
-            "ZRgDIAEoCUIyqgIvRG9saXR0bGUuUnVudGltZS5FdmVudHMuUmVsYXRpdml0",
-            "eS5NaWNyb3NlcnZpY2ViBnByb3RvMw=="));
+            "ZRgDIAEoCUIqqgInRG9saXR0bGUuRXZlbnRzLlJlbGF0aXZpdHkuTWljcm9z",
+            "ZXJ2aWNlYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Dolittle.Runtime.Events.Relativity.Microservice.Claim), global::Dolittle.Runtime.Events.Relativity.Microservice.Claim.Parser, new[]{ "Name", "Value", "ValueType" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Dolittle.Events.Relativity.Microservice.Claim), global::Dolittle.Events.Relativity.Microservice.Claim.Parser, new[]{ "Name", "Value", "ValueType" }, null, null, null)
           }));
     }
     #endregion
@@ -50,7 +50,7 @@ namespace Dolittle.Runtime.Events.Relativity.Microservice {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Dolittle.Runtime.Events.Relativity.Microservice.ClaimReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Dolittle.Events.Relativity.Microservice.ClaimReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

@@ -10,7 +10,7 @@ import "Events.Relativity/Microservice/event_source_version.proto";
 
 package dolittle.events.relativity.microservice;
 
-option csharp_namespace = "Dolittle.Runtime.Events.Relativity.Microservice";
+option csharp_namespace = "Dolittle.Events.Relativity.Microservice";
 
 // Represents a versioned event source
 message VersionedEventSource {

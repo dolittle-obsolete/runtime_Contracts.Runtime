@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Dolittle.Runtime.Events.Relativity.Microservice {
+namespace Dolittle.Events.Relativity.Microservice {
 
   /// <summary>Holder for reflection information generated from Events.Relativity/Microservice/committed_event_stream.proto</summary>
   public static partial class CommittedEventStreamReflection {
@@ -35,12 +35,12 @@ namespace Dolittle.Runtime.Events.Relativity.Microservice {
             "AmlkGAMgASgLMg4uZG9saXR0bGUuZ3VpZBIRCgl0aW1lU3RhbXAYBCABKAMS",
             "JQoNY29ycmVsYXRpb25JZBgFIAEoCzIOLmRvbGl0dGxlLmd1aWQSRgoGZXZl",
             "bnRzGAYgAygLMjYuZG9saXR0bGUuZXZlbnRzLnJlbGF0aXZpdHkubWljcm9z",
-            "ZXJ2aWNlLkV2ZW50RW52ZWxvcGVCMqoCL0RvbGl0dGxlLlJ1bnRpbWUuRXZl",
-            "bnRzLlJlbGF0aXZpdHkuTWljcm9zZXJ2aWNlYgZwcm90bzM="));
+            "ZXJ2aWNlLkV2ZW50RW52ZWxvcGVCKqoCJ0RvbGl0dGxlLkV2ZW50cy5SZWxh",
+            "dGl2aXR5Lk1pY3Jvc2VydmljZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::System.Protobuf.GuidReflection.Descriptor, global::Dolittle.Runtime.Events.Relativity.Microservice.VersionedEventSourceReflection.Descriptor, global::Dolittle.Runtime.Events.Relativity.Microservice.EventEnvelopeReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::System.Protobuf.GuidReflection.Descriptor, global::Dolittle.Events.Relativity.Microservice.VersionedEventSourceReflection.Descriptor, global::Dolittle.Events.Relativity.Microservice.EventEnvelopeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Dolittle.Runtime.Events.Relativity.Microservice.CommittedEventStream), global::Dolittle.Runtime.Events.Relativity.Microservice.CommittedEventStream.Parser, new[]{ "Source", "Sequence", "Id", "TimeStamp", "CorrelationId", "Events" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Dolittle.Events.Relativity.Microservice.CommittedEventStream), global::Dolittle.Events.Relativity.Microservice.CommittedEventStream.Parser, new[]{ "Source", "Sequence", "Id", "TimeStamp", "CorrelationId", "Events" }, null, null, null)
           }));
     }
     #endregion
@@ -58,7 +58,7 @@ namespace Dolittle.Runtime.Events.Relativity.Microservice {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Dolittle.Runtime.Events.Relativity.Microservice.CommittedEventStreamReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Dolittle.Events.Relativity.Microservice.CommittedEventStreamReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -91,9 +91,9 @@ namespace Dolittle.Runtime.Events.Relativity.Microservice {
 
     /// <summary>Field number for the "source" field.</summary>
     public const int SourceFieldNumber = 1;
-    private global::Dolittle.Runtime.Events.Relativity.Microservice.VersionedEventSource source_;
+    private global::Dolittle.Events.Relativity.Microservice.VersionedEventSource source_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Dolittle.Runtime.Events.Relativity.Microservice.VersionedEventSource Source {
+    public global::Dolittle.Events.Relativity.Microservice.VersionedEventSource Source {
       get { return source_; }
       set {
         source_ = value;
@@ -146,11 +146,11 @@ namespace Dolittle.Runtime.Events.Relativity.Microservice {
 
     /// <summary>Field number for the "events" field.</summary>
     public const int EventsFieldNumber = 6;
-    private static readonly pb::FieldCodec<global::Dolittle.Runtime.Events.Relativity.Microservice.EventEnvelope> _repeated_events_codec
-        = pb::FieldCodec.ForMessage(50, global::Dolittle.Runtime.Events.Relativity.Microservice.EventEnvelope.Parser);
-    private readonly pbc::RepeatedField<global::Dolittle.Runtime.Events.Relativity.Microservice.EventEnvelope> events_ = new pbc::RepeatedField<global::Dolittle.Runtime.Events.Relativity.Microservice.EventEnvelope>();
+    private static readonly pb::FieldCodec<global::Dolittle.Events.Relativity.Microservice.EventEnvelope> _repeated_events_codec
+        = pb::FieldCodec.ForMessage(50, global::Dolittle.Events.Relativity.Microservice.EventEnvelope.Parser);
+    private readonly pbc::RepeatedField<global::Dolittle.Events.Relativity.Microservice.EventEnvelope> events_ = new pbc::RepeatedField<global::Dolittle.Events.Relativity.Microservice.EventEnvelope>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Dolittle.Runtime.Events.Relativity.Microservice.EventEnvelope> Events {
+    public pbc::RepeatedField<global::Dolittle.Events.Relativity.Microservice.EventEnvelope> Events {
       get { return events_; }
     }
 
@@ -256,7 +256,7 @@ namespace Dolittle.Runtime.Events.Relativity.Microservice {
       }
       if (other.source_ != null) {
         if (source_ == null) {
-          Source = new global::Dolittle.Runtime.Events.Relativity.Microservice.VersionedEventSource();
+          Source = new global::Dolittle.Events.Relativity.Microservice.VersionedEventSource();
         }
         Source.MergeFrom(other.Source);
       }
@@ -292,7 +292,7 @@ namespace Dolittle.Runtime.Events.Relativity.Microservice {
             break;
           case 10: {
             if (source_ == null) {
-              Source = new global::Dolittle.Runtime.Events.Relativity.Microservice.VersionedEventSource();
+              Source = new global::Dolittle.Events.Relativity.Microservice.VersionedEventSource();
             }
             input.ReadMessage(Source);
             break;

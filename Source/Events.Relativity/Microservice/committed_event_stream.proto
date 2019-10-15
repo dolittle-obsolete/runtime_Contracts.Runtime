@@ -11,7 +11,7 @@ import "Events.Relativity/Microservice/event_envelope.proto";
 
 package dolittle.events.relativity.microservice;
 
-option csharp_namespace = "Dolittle.Runtime.Events.Relativity.Microservice";
+option csharp_namespace = "Dolittle.Events.Relativity.Microservice";
 
 // Represents a committed event stream
 message CommittedEventStream {

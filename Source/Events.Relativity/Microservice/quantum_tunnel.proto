@@ -10,7 +10,7 @@ package dolittle.events.relativity.microservice;
 import "Events.Relativity/Microservice/open_tunnel.proto";
 import "Events.Relativity/Microservice/committed_event_stream_with_context.proto";
 
-option csharp_namespace = "Dolittle.Runtime.Events.Relativity.Microservice";
+option csharp_namespace = "Dolittle.Events.Relativity.Microservice";
 
 // Represents the service for working with quantum tunnel
 service QuantumTunnelService {

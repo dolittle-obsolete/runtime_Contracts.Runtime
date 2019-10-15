@@ -9,7 +9,7 @@ package dolittle.events.relativity.microservice;
 
 import "system/guid.proto";
 
-option csharp_namespace = "Dolittle.Runtime.Events.Relativity.Microservice";
+option csharp_namespace = "Dolittle.Events.Relativity.Microservice";
 
 // Represents the artifact
 message Artifact {

@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Dolittle.Runtime.Events.Relativity.Microservice {
+namespace Dolittle.Events.Relativity.Microservice {
 
   /// <summary>Holder for reflection information generated from Events.Relativity/Microservice/open_tunnel.proto</summary>
   public static partial class OpenTunnelReflection {
@@ -34,12 +34,12 @@ namespace Dolittle.Runtime.Events.Relativity.Microservice {
             "IAEoCzIOLmRvbGl0dGxlLmd1aWQSRgoHb2Zmc2V0cxgEIAMoCzI1LmRvbGl0",
             "dGxlLmV2ZW50cy5yZWxhdGl2aXR5Lm1pY3Jvc2VydmljZS5UZW5hbnRPZmZz",
             "ZXQSQQoGZXZlbnRzGAUgAygLMjEuZG9saXR0bGUuZXZlbnRzLnJlbGF0aXZp",
-            "dHkubWljcm9zZXJ2aWNlLkFydGlmYWN0QjKqAi9Eb2xpdHRsZS5SdW50aW1l",
-            "LkV2ZW50cy5SZWxhdGl2aXR5Lk1pY3Jvc2VydmljZWIGcHJvdG8z"));
+            "dHkubWljcm9zZXJ2aWNlLkFydGlmYWN0QiqqAidEb2xpdHRsZS5FdmVudHMu",
+            "UmVsYXRpdml0eS5NaWNyb3NlcnZpY2ViBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::System.Protobuf.GuidReflection.Descriptor, global::Dolittle.Runtime.Events.Relativity.Microservice.ArtifactReflection.Descriptor, global::Dolittle.Runtime.Events.Relativity.Microservice.TenantOffsetReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::System.Protobuf.GuidReflection.Descriptor, global::Dolittle.Events.Relativity.Microservice.ArtifactReflection.Descriptor, global::Dolittle.Events.Relativity.Microservice.TenantOffsetReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Dolittle.Runtime.Events.Relativity.Microservice.OpenTunnel), global::Dolittle.Runtime.Events.Relativity.Microservice.OpenTunnel.Parser, new[]{ "Application", "BoundedContext", "ClientId", "Offsets", "Events" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Dolittle.Events.Relativity.Microservice.OpenTunnel), global::Dolittle.Events.Relativity.Microservice.OpenTunnel.Parser, new[]{ "Application", "BoundedContext", "ClientId", "Offsets", "Events" }, null, null, null)
           }));
     }
     #endregion
@@ -57,7 +57,7 @@ namespace Dolittle.Runtime.Events.Relativity.Microservice {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Dolittle.Runtime.Events.Relativity.Microservice.OpenTunnelReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Dolittle.Events.Relativity.Microservice.OpenTunnelReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -122,21 +122,21 @@ namespace Dolittle.Runtime.Events.Relativity.Microservice {
 
     /// <summary>Field number for the "offsets" field.</summary>
     public const int OffsetsFieldNumber = 4;
-    private static readonly pb::FieldCodec<global::Dolittle.Runtime.Events.Relativity.Microservice.TenantOffset> _repeated_offsets_codec
-        = pb::FieldCodec.ForMessage(34, global::Dolittle.Runtime.Events.Relativity.Microservice.TenantOffset.Parser);
-    private readonly pbc::RepeatedField<global::Dolittle.Runtime.Events.Relativity.Microservice.TenantOffset> offsets_ = new pbc::RepeatedField<global::Dolittle.Runtime.Events.Relativity.Microservice.TenantOffset>();
+    private static readonly pb::FieldCodec<global::Dolittle.Events.Relativity.Microservice.TenantOffset> _repeated_offsets_codec
+        = pb::FieldCodec.ForMessage(34, global::Dolittle.Events.Relativity.Microservice.TenantOffset.Parser);
+    private readonly pbc::RepeatedField<global::Dolittle.Events.Relativity.Microservice.TenantOffset> offsets_ = new pbc::RepeatedField<global::Dolittle.Events.Relativity.Microservice.TenantOffset>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Dolittle.Runtime.Events.Relativity.Microservice.TenantOffset> Offsets {
+    public pbc::RepeatedField<global::Dolittle.Events.Relativity.Microservice.TenantOffset> Offsets {
       get { return offsets_; }
     }
 
     /// <summary>Field number for the "events" field.</summary>
     public const int EventsFieldNumber = 5;
-    private static readonly pb::FieldCodec<global::Dolittle.Runtime.Events.Relativity.Microservice.Artifact> _repeated_events_codec
-        = pb::FieldCodec.ForMessage(42, global::Dolittle.Runtime.Events.Relativity.Microservice.Artifact.Parser);
-    private readonly pbc::RepeatedField<global::Dolittle.Runtime.Events.Relativity.Microservice.Artifact> events_ = new pbc::RepeatedField<global::Dolittle.Runtime.Events.Relativity.Microservice.Artifact>();
+    private static readonly pb::FieldCodec<global::Dolittle.Events.Relativity.Microservice.Artifact> _repeated_events_codec
+        = pb::FieldCodec.ForMessage(42, global::Dolittle.Events.Relativity.Microservice.Artifact.Parser);
+    private readonly pbc::RepeatedField<global::Dolittle.Events.Relativity.Microservice.Artifact> events_ = new pbc::RepeatedField<global::Dolittle.Events.Relativity.Microservice.Artifact>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Dolittle.Runtime.Events.Relativity.Microservice.Artifact> Events {
+    public pbc::RepeatedField<global::Dolittle.Events.Relativity.Microservice.Artifact> Events {
       get { return events_; }
     }
 
