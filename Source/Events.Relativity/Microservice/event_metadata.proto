@@ -5,7 +5,6 @@
 
 syntax = "proto3";
 
-import "system/guid.proto";
 import "Events.Relativity/Microservice/artifact.proto";
 import "Events.Relativity/Microservice/versioned_event_source.proto";
 import "Events.Relativity/Microservice/original_context.proto";
@@ -16,9 +15,9 @@ option csharp_namespace = "Dolittle.Events.Relativity.Microservice";
 
 // Represents the metadata related to an event
 message EventMetadata {
-    guid eventId = 1;
+    bytes eventId = 1;
     VersionedEventSource source = 2;
-    guid correlationId = 3;
+    bytes correlationId = 3;
     Artifact artifact = 4;
     int64 occurred = 5;
     OriginalContext originalContext = 6;

@@ -7,12 +7,10 @@ syntax = "proto3";
 
 package dolittle.events.relativity.microservice;
 
-import "system/guid.proto";
-
 option csharp_namespace = "Dolittle.Events.Relativity.Microservice";
 
 // Represents the artifact
 message Artifact {
-    guid id = 1;
+    bytes id = 1;
     int32 generation = 2;
 }

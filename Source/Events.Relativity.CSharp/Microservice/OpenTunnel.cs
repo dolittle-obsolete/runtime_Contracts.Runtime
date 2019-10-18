@@ -26,18 +26,17 @@ namespace Dolittle.Events.Relativity.Microservice {
           string.Concat(
             "CjBFdmVudHMuUmVsYXRpdml0eS9NaWNyb3NlcnZpY2Uvb3Blbl90dW5uZWwu",
             "cHJvdG8SJ2RvbGl0dGxlLmV2ZW50cy5yZWxhdGl2aXR5Lm1pY3Jvc2Vydmlj",
-            "ZRoRc3lzdGVtL2d1aWQucHJvdG8aLUV2ZW50cy5SZWxhdGl2aXR5L01pY3Jv",
-            "c2VydmljZS9hcnRpZmFjdC5wcm90bxoyRXZlbnRzLlJlbGF0aXZpdHkvTWlj",
-            "cm9zZXJ2aWNlL3RlbmFudF9vZmZzZXQucHJvdG8ihgIKCk9wZW5UdW5uZWwS",
-            "IwoLYXBwbGljYXRpb24YASABKAsyDi5kb2xpdHRsZS5ndWlkEiYKDmJvdW5k",
-            "ZWRDb250ZXh0GAIgASgLMg4uZG9saXR0bGUuZ3VpZBIgCghjbGllbnRJZBgD",
-            "IAEoCzIOLmRvbGl0dGxlLmd1aWQSRgoHb2Zmc2V0cxgEIAMoCzI1LmRvbGl0",
-            "dGxlLmV2ZW50cy5yZWxhdGl2aXR5Lm1pY3Jvc2VydmljZS5UZW5hbnRPZmZz",
-            "ZXQSQQoGZXZlbnRzGAUgAygLMjEuZG9saXR0bGUuZXZlbnRzLnJlbGF0aXZp",
-            "dHkubWljcm9zZXJ2aWNlLkFydGlmYWN0QiqqAidEb2xpdHRsZS5FdmVudHMu",
-            "UmVsYXRpdml0eS5NaWNyb3NlcnZpY2ViBnByb3RvMw=="));
+            "ZRotRXZlbnRzLlJlbGF0aXZpdHkvTWljcm9zZXJ2aWNlL2FydGlmYWN0LnBy",
+            "b3RvGjJFdmVudHMuUmVsYXRpdml0eS9NaWNyb3NlcnZpY2UvdGVuYW50X29m",
+            "ZnNldC5wcm90byLWAQoKT3BlblR1bm5lbBITCgthcHBsaWNhdGlvbhgBIAEo",
+            "DBIWCg5ib3VuZGVkQ29udGV4dBgCIAEoDBIQCghjbGllbnRJZBgDIAEoDBJG",
+            "CgdvZmZzZXRzGAQgAygLMjUuZG9saXR0bGUuZXZlbnRzLnJlbGF0aXZpdHku",
+            "bWljcm9zZXJ2aWNlLlRlbmFudE9mZnNldBJBCgZldmVudHMYBSADKAsyMS5k",
+            "b2xpdHRsZS5ldmVudHMucmVsYXRpdml0eS5taWNyb3NlcnZpY2UuQXJ0aWZh",
+            "Y3RCKqoCJ0RvbGl0dGxlLkV2ZW50cy5SZWxhdGl2aXR5Lk1pY3Jvc2Vydmlj",
+            "ZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::System.Protobuf.GuidReflection.Descriptor, global::Dolittle.Events.Relativity.Microservice.ArtifactReflection.Descriptor, global::Dolittle.Events.Relativity.Microservice.TenantOffsetReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Dolittle.Events.Relativity.Microservice.ArtifactReflection.Descriptor, global::Dolittle.Events.Relativity.Microservice.TenantOffsetReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Dolittle.Events.Relativity.Microservice.OpenTunnel), global::Dolittle.Events.Relativity.Microservice.OpenTunnel.Parser, new[]{ "Application", "BoundedContext", "ClientId", "Offsets", "Events" }, null, null, null)
           }));
@@ -74,9 +73,9 @@ namespace Dolittle.Events.Relativity.Microservice {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public OpenTunnel(OpenTunnel other) : this() {
-      application_ = other.application_ != null ? other.application_.Clone() : null;
-      boundedContext_ = other.boundedContext_ != null ? other.boundedContext_.Clone() : null;
-      clientId_ = other.clientId_ != null ? other.clientId_.Clone() : null;
+      application_ = other.application_;
+      boundedContext_ = other.boundedContext_;
+      clientId_ = other.clientId_;
       offsets_ = other.offsets_.Clone();
       events_ = other.events_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -89,34 +88,34 @@ namespace Dolittle.Events.Relativity.Microservice {
 
     /// <summary>Field number for the "application" field.</summary>
     public const int ApplicationFieldNumber = 1;
-    private global::System.Protobuf.guid application_;
+    private pb::ByteString application_ = pb::ByteString.Empty;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::System.Protobuf.guid Application {
+    public pb::ByteString Application {
       get { return application_; }
       set {
-        application_ = value;
+        application_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
     /// <summary>Field number for the "boundedContext" field.</summary>
     public const int BoundedContextFieldNumber = 2;
-    private global::System.Protobuf.guid boundedContext_;
+    private pb::ByteString boundedContext_ = pb::ByteString.Empty;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::System.Protobuf.guid BoundedContext {
+    public pb::ByteString BoundedContext {
       get { return boundedContext_; }
       set {
-        boundedContext_ = value;
+        boundedContext_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
     /// <summary>Field number for the "clientId" field.</summary>
     public const int ClientIdFieldNumber = 3;
-    private global::System.Protobuf.guid clientId_;
+    private pb::ByteString clientId_ = pb::ByteString.Empty;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::System.Protobuf.guid ClientId {
+    public pb::ByteString ClientId {
       get { return clientId_; }
       set {
-        clientId_ = value;
+        clientId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -153,9 +152,9 @@ namespace Dolittle.Events.Relativity.Microservice {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(Application, other.Application)) return false;
-      if (!object.Equals(BoundedContext, other.BoundedContext)) return false;
-      if (!object.Equals(ClientId, other.ClientId)) return false;
+      if (Application != other.Application) return false;
+      if (BoundedContext != other.BoundedContext) return false;
+      if (ClientId != other.ClientId) return false;
       if(!offsets_.Equals(other.offsets_)) return false;
       if(!events_.Equals(other.events_)) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -164,9 +163,9 @@ namespace Dolittle.Events.Relativity.Microservice {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (application_ != null) hash ^= Application.GetHashCode();
-      if (boundedContext_ != null) hash ^= BoundedContext.GetHashCode();
-      if (clientId_ != null) hash ^= ClientId.GetHashCode();
+      if (Application.Length != 0) hash ^= Application.GetHashCode();
+      if (BoundedContext.Length != 0) hash ^= BoundedContext.GetHashCode();
+      if (ClientId.Length != 0) hash ^= ClientId.GetHashCode();
       hash ^= offsets_.GetHashCode();
       hash ^= events_.GetHashCode();
       if (_unknownFields != null) {
@@ -182,17 +181,17 @@ namespace Dolittle.Events.Relativity.Microservice {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (application_ != null) {
+      if (Application.Length != 0) {
         output.WriteRawTag(10);
-        output.WriteMessage(Application);
+        output.WriteBytes(Application);
       }
-      if (boundedContext_ != null) {
+      if (BoundedContext.Length != 0) {
         output.WriteRawTag(18);
-        output.WriteMessage(BoundedContext);
+        output.WriteBytes(BoundedContext);
       }
-      if (clientId_ != null) {
+      if (ClientId.Length != 0) {
         output.WriteRawTag(26);
-        output.WriteMessage(ClientId);
+        output.WriteBytes(ClientId);
       }
       offsets_.WriteTo(output, _repeated_offsets_codec);
       events_.WriteTo(output, _repeated_events_codec);
@@ -204,14 +203,14 @@ namespace Dolittle.Events.Relativity.Microservice {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (application_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Application);
+      if (Application.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(Application);
       }
-      if (boundedContext_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(BoundedContext);
+      if (BoundedContext.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(BoundedContext);
       }
-      if (clientId_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ClientId);
+      if (ClientId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(ClientId);
       }
       size += offsets_.CalculateSize(_repeated_offsets_codec);
       size += events_.CalculateSize(_repeated_events_codec);
@@ -226,23 +225,14 @@ namespace Dolittle.Events.Relativity.Microservice {
       if (other == null) {
         return;
       }
-      if (other.application_ != null) {
-        if (application_ == null) {
-          Application = new global::System.Protobuf.guid();
-        }
-        Application.MergeFrom(other.Application);
+      if (other.Application.Length != 0) {
+        Application = other.Application;
       }
-      if (other.boundedContext_ != null) {
-        if (boundedContext_ == null) {
-          BoundedContext = new global::System.Protobuf.guid();
-        }
-        BoundedContext.MergeFrom(other.BoundedContext);
+      if (other.BoundedContext.Length != 0) {
+        BoundedContext = other.BoundedContext;
       }
-      if (other.clientId_ != null) {
-        if (clientId_ == null) {
-          ClientId = new global::System.Protobuf.guid();
-        }
-        ClientId.MergeFrom(other.ClientId);
+      if (other.ClientId.Length != 0) {
+        ClientId = other.ClientId;
       }
       offsets_.Add(other.offsets_);
       events_.Add(other.events_);
@@ -258,24 +248,15 @@ namespace Dolittle.Events.Relativity.Microservice {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            if (application_ == null) {
-              Application = new global::System.Protobuf.guid();
-            }
-            input.ReadMessage(Application);
+            Application = input.ReadBytes();
             break;
           }
           case 18: {
-            if (boundedContext_ == null) {
-              BoundedContext = new global::System.Protobuf.guid();
-            }
-            input.ReadMessage(BoundedContext);
+            BoundedContext = input.ReadBytes();
             break;
           }
           case 26: {
-            if (clientId_ == null) {
-              ClientId = new global::System.Protobuf.guid();
-            }
-            input.ReadMessage(ClientId);
+            ClientId = input.ReadBytes();
             break;
           }
           case 34: {

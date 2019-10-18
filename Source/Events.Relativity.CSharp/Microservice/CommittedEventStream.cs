@@ -26,19 +26,18 @@ namespace Dolittle.Events.Relativity.Microservice {
           string.Concat(
             "CjtFdmVudHMuUmVsYXRpdml0eS9NaWNyb3NlcnZpY2UvY29tbWl0dGVkX2V2",
             "ZW50X3N0cmVhbS5wcm90bxInZG9saXR0bGUuZXZlbnRzLnJlbGF0aXZpdHku",
-            "bWljcm9zZXJ2aWNlGhFzeXN0ZW0vZ3VpZC5wcm90bxo7RXZlbnRzLlJlbGF0",
-            "aXZpdHkvTWljcm9zZXJ2aWNlL3ZlcnNpb25lZF9ldmVudF9zb3VyY2UucHJv",
-            "dG8aM0V2ZW50cy5SZWxhdGl2aXR5L01pY3Jvc2VydmljZS9ldmVudF9lbnZl",
-            "bG9wZS5wcm90byKVAgoUQ29tbWl0dGVkRXZlbnRTdHJlYW0STQoGc291cmNl",
-            "GAEgASgLMj0uZG9saXR0bGUuZXZlbnRzLnJlbGF0aXZpdHkubWljcm9zZXJ2",
-            "aWNlLlZlcnNpb25lZEV2ZW50U291cmNlEhAKCHNlcXVlbmNlGAIgASgEEhoK",
-            "AmlkGAMgASgLMg4uZG9saXR0bGUuZ3VpZBIRCgl0aW1lU3RhbXAYBCABKAMS",
-            "JQoNY29ycmVsYXRpb25JZBgFIAEoCzIOLmRvbGl0dGxlLmd1aWQSRgoGZXZl",
-            "bnRzGAYgAygLMjYuZG9saXR0bGUuZXZlbnRzLnJlbGF0aXZpdHkubWljcm9z",
-            "ZXJ2aWNlLkV2ZW50RW52ZWxvcGVCKqoCJ0RvbGl0dGxlLkV2ZW50cy5SZWxh",
-            "dGl2aXR5Lk1pY3Jvc2VydmljZWIGcHJvdG8z"));
+            "bWljcm9zZXJ2aWNlGjtFdmVudHMuUmVsYXRpdml0eS9NaWNyb3NlcnZpY2Uv",
+            "dmVyc2lvbmVkX2V2ZW50X3NvdXJjZS5wcm90bxozRXZlbnRzLlJlbGF0aXZp",
+            "dHkvTWljcm9zZXJ2aWNlL2V2ZW50X2VudmVsb3BlLnByb3RvIvUBChRDb21t",
+            "aXR0ZWRFdmVudFN0cmVhbRJNCgZzb3VyY2UYASABKAsyPS5kb2xpdHRsZS5l",
+            "dmVudHMucmVsYXRpdml0eS5taWNyb3NlcnZpY2UuVmVyc2lvbmVkRXZlbnRT",
+            "b3VyY2USEAoIc2VxdWVuY2UYAiABKAQSCgoCaWQYAyABKAwSEQoJdGltZVN0",
+            "YW1wGAQgASgDEhUKDWNvcnJlbGF0aW9uSWQYBSABKAwSRgoGZXZlbnRzGAYg",
+            "AygLMjYuZG9saXR0bGUuZXZlbnRzLnJlbGF0aXZpdHkubWljcm9zZXJ2aWNl",
+            "LkV2ZW50RW52ZWxvcGVCKqoCJ0RvbGl0dGxlLkV2ZW50cy5SZWxhdGl2aXR5",
+            "Lk1pY3Jvc2VydmljZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::System.Protobuf.GuidReflection.Descriptor, global::Dolittle.Events.Relativity.Microservice.VersionedEventSourceReflection.Descriptor, global::Dolittle.Events.Relativity.Microservice.EventEnvelopeReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Dolittle.Events.Relativity.Microservice.VersionedEventSourceReflection.Descriptor, global::Dolittle.Events.Relativity.Microservice.EventEnvelopeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Dolittle.Events.Relativity.Microservice.CommittedEventStream), global::Dolittle.Events.Relativity.Microservice.CommittedEventStream.Parser, new[]{ "Source", "Sequence", "Id", "TimeStamp", "CorrelationId", "Events" }, null, null, null)
           }));
@@ -77,9 +76,9 @@ namespace Dolittle.Events.Relativity.Microservice {
     public CommittedEventStream(CommittedEventStream other) : this() {
       source_ = other.source_ != null ? other.source_.Clone() : null;
       sequence_ = other.sequence_;
-      id_ = other.id_ != null ? other.id_.Clone() : null;
+      id_ = other.id_;
       timeStamp_ = other.timeStamp_;
-      correlationId_ = other.correlationId_ != null ? other.correlationId_.Clone() : null;
+      correlationId_ = other.correlationId_;
       events_ = other.events_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -113,12 +112,12 @@ namespace Dolittle.Events.Relativity.Microservice {
 
     /// <summary>Field number for the "id" field.</summary>
     public const int IdFieldNumber = 3;
-    private global::System.Protobuf.guid id_;
+    private pb::ByteString id_ = pb::ByteString.Empty;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::System.Protobuf.guid Id {
+    public pb::ByteString Id {
       get { return id_; }
       set {
-        id_ = value;
+        id_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -135,12 +134,12 @@ namespace Dolittle.Events.Relativity.Microservice {
 
     /// <summary>Field number for the "correlationId" field.</summary>
     public const int CorrelationIdFieldNumber = 5;
-    private global::System.Protobuf.guid correlationId_;
+    private pb::ByteString correlationId_ = pb::ByteString.Empty;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::System.Protobuf.guid CorrelationId {
+    public pb::ByteString CorrelationId {
       get { return correlationId_; }
       set {
-        correlationId_ = value;
+        correlationId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -169,9 +168,9 @@ namespace Dolittle.Events.Relativity.Microservice {
       }
       if (!object.Equals(Source, other.Source)) return false;
       if (Sequence != other.Sequence) return false;
-      if (!object.Equals(Id, other.Id)) return false;
+      if (Id != other.Id) return false;
       if (TimeStamp != other.TimeStamp) return false;
-      if (!object.Equals(CorrelationId, other.CorrelationId)) return false;
+      if (CorrelationId != other.CorrelationId) return false;
       if(!events_.Equals(other.events_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -181,9 +180,9 @@ namespace Dolittle.Events.Relativity.Microservice {
       int hash = 1;
       if (source_ != null) hash ^= Source.GetHashCode();
       if (Sequence != 0UL) hash ^= Sequence.GetHashCode();
-      if (id_ != null) hash ^= Id.GetHashCode();
+      if (Id.Length != 0) hash ^= Id.GetHashCode();
       if (TimeStamp != 0L) hash ^= TimeStamp.GetHashCode();
-      if (correlationId_ != null) hash ^= CorrelationId.GetHashCode();
+      if (CorrelationId.Length != 0) hash ^= CorrelationId.GetHashCode();
       hash ^= events_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -206,17 +205,17 @@ namespace Dolittle.Events.Relativity.Microservice {
         output.WriteRawTag(16);
         output.WriteUInt64(Sequence);
       }
-      if (id_ != null) {
+      if (Id.Length != 0) {
         output.WriteRawTag(26);
-        output.WriteMessage(Id);
+        output.WriteBytes(Id);
       }
       if (TimeStamp != 0L) {
         output.WriteRawTag(32);
         output.WriteInt64(TimeStamp);
       }
-      if (correlationId_ != null) {
+      if (CorrelationId.Length != 0) {
         output.WriteRawTag(42);
-        output.WriteMessage(CorrelationId);
+        output.WriteBytes(CorrelationId);
       }
       events_.WriteTo(output, _repeated_events_codec);
       if (_unknownFields != null) {
@@ -233,14 +232,14 @@ namespace Dolittle.Events.Relativity.Microservice {
       if (Sequence != 0UL) {
         size += 1 + pb::CodedOutputStream.ComputeUInt64Size(Sequence);
       }
-      if (id_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Id);
+      if (Id.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(Id);
       }
       if (TimeStamp != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(TimeStamp);
       }
-      if (correlationId_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CorrelationId);
+      if (CorrelationId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(CorrelationId);
       }
       size += events_.CalculateSize(_repeated_events_codec);
       if (_unknownFields != null) {
@@ -263,20 +262,14 @@ namespace Dolittle.Events.Relativity.Microservice {
       if (other.Sequence != 0UL) {
         Sequence = other.Sequence;
       }
-      if (other.id_ != null) {
-        if (id_ == null) {
-          Id = new global::System.Protobuf.guid();
-        }
-        Id.MergeFrom(other.Id);
+      if (other.Id.Length != 0) {
+        Id = other.Id;
       }
       if (other.TimeStamp != 0L) {
         TimeStamp = other.TimeStamp;
       }
-      if (other.correlationId_ != null) {
-        if (correlationId_ == null) {
-          CorrelationId = new global::System.Protobuf.guid();
-        }
-        CorrelationId.MergeFrom(other.CorrelationId);
+      if (other.CorrelationId.Length != 0) {
+        CorrelationId = other.CorrelationId;
       }
       events_.Add(other.events_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -302,10 +295,7 @@ namespace Dolittle.Events.Relativity.Microservice {
             break;
           }
           case 26: {
-            if (id_ == null) {
-              Id = new global::System.Protobuf.guid();
-            }
-            input.ReadMessage(Id);
+            Id = input.ReadBytes();
             break;
           }
           case 32: {
@@ -313,10 +303,7 @@ namespace Dolittle.Events.Relativity.Microservice {
             break;
           }
           case 42: {
-            if (correlationId_ == null) {
-              CorrelationId = new global::System.Protobuf.guid();
-            }
-            input.ReadMessage(CorrelationId);
+            CorrelationId = input.ReadBytes();
             break;
           }
           case 50: {

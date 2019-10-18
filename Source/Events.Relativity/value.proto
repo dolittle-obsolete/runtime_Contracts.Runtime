@@ -5,11 +5,11 @@
 
 syntax = "proto3";
 
-package system;
+package dolittle;
 
-import "system/object.proto";
+import "Events.Relativity/object.proto";
 
-option csharp_namespace = "System.Protobuf";
+option csharp_namespace = "Dolittle";
 
 message Value {
   // The kind of value.

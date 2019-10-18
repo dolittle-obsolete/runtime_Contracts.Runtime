@@ -6,16 +6,15 @@ syntax = "proto3";
 
 package dolittle.events.relativity.microservice;
 
-import "system/guid.proto";
 import "Events.Relativity/Microservice/claim.proto";
 
 option csharp_namespace = "Dolittle.Events.Relativity.Microservice";
 
 // Represents the original context
 message OriginalContext {
-    guid application = 1;
-    guid boundedContext = 2;
-    guid tenant = 3;
+    bytes application = 1;
+    bytes boundedContext = 2;
+    bytes tenant = 3;
     string environment = 4;
     repeated Claim claims = 5;
     uint64 commitInOrigin = 6;

@@ -26,14 +26,14 @@ namespace Dolittle.Events.Relativity.Microservice {
           string.Concat(
             "CjFFdmVudHMuUmVsYXRpdml0eS9NaWNyb3NlcnZpY2UvcHJvcGVydHlfYmFn",
             "LnByb3RvEidkb2xpdHRsZS5ldmVudHMucmVsYXRpdml0eS5taWNyb3NlcnZp",
-            "Y2UaEnN5c3RlbS92YWx1ZS5wcm90byKdAQoLUHJvcGVydHlCYWcSUAoGdmFs",
-            "dWVzGAEgAygLMkAuZG9saXR0bGUuZXZlbnRzLnJlbGF0aXZpdHkubWljcm9z",
-            "ZXJ2aWNlLlByb3BlcnR5QmFnLlZhbHVlc0VudHJ5GjwKC1ZhbHVlc0VudHJ5",
-            "EgsKA2tleRgBIAEoCRIcCgV2YWx1ZRgCIAEoCzINLnN5c3RlbS5WYWx1ZToC",
-            "OAFCKqoCJ0RvbGl0dGxlLkV2ZW50cy5SZWxhdGl2aXR5Lk1pY3Jvc2Vydmlj",
-            "ZWIGcHJvdG8z"));
+            "Y2UaHUV2ZW50cy5SZWxhdGl2aXR5L3ZhbHVlLnByb3RvIp8BCgtQcm9wZXJ0",
+            "eUJhZxJQCgZ2YWx1ZXMYASADKAsyQC5kb2xpdHRsZS5ldmVudHMucmVsYXRp",
+            "dml0eS5taWNyb3NlcnZpY2UuUHJvcGVydHlCYWcuVmFsdWVzRW50cnkaPgoL",
+            "VmFsdWVzRW50cnkSCwoDa2V5GAEgASgJEh4KBXZhbHVlGAIgASgLMg8uZG9s",
+            "aXR0bGUuVmFsdWU6AjgBQiqqAidEb2xpdHRsZS5FdmVudHMuUmVsYXRpdml0",
+            "eS5NaWNyb3NlcnZpY2ViBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::System.Protobuf.ValueReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Dolittle.ValueReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Dolittle.Events.Relativity.Microservice.PropertyBag), global::Dolittle.Events.Relativity.Microservice.PropertyBag.Parser, new[]{ "Values" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
           }));
@@ -81,11 +81,11 @@ namespace Dolittle.Events.Relativity.Microservice {
 
     /// <summary>Field number for the "values" field.</summary>
     public const int ValuesFieldNumber = 1;
-    private static readonly pbc::MapField<string, global::System.Protobuf.Value>.Codec _map_values_codec
-        = new pbc::MapField<string, global::System.Protobuf.Value>.Codec(pb::FieldCodec.ForString(10), pb::FieldCodec.ForMessage(18, global::System.Protobuf.Value.Parser), 10);
-    private readonly pbc::MapField<string, global::System.Protobuf.Value> values_ = new pbc::MapField<string, global::System.Protobuf.Value>();
+    private static readonly pbc::MapField<string, global::Dolittle.Value>.Codec _map_values_codec
+        = new pbc::MapField<string, global::Dolittle.Value>.Codec(pb::FieldCodec.ForString(10), pb::FieldCodec.ForMessage(18, global::Dolittle.Value.Parser), 10);
+    private readonly pbc::MapField<string, global::Dolittle.Value> values_ = new pbc::MapField<string, global::Dolittle.Value>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::MapField<string, global::System.Protobuf.Value> Values {
+    public pbc::MapField<string, global::Dolittle.Value> Values {
       get { return values_; }
     }
 

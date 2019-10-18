@@ -26,12 +26,11 @@ namespace Dolittle.Events.Relativity.Microservice {
           string.Concat(
             "CjJFdmVudHMuUmVsYXRpdml0eS9NaWNyb3NlcnZpY2UvdGVuYW50X29mZnNl",
             "dC5wcm90bxInZG9saXR0bGUuZXZlbnRzLnJlbGF0aXZpdHkubWljcm9zZXJ2",
-            "aWNlGhFzeXN0ZW0vZ3VpZC5wcm90byI+CgxUZW5hbnRPZmZzZXQSHgoGdGVu",
-            "YW50GAEgASgLMg4uZG9saXR0bGUuZ3VpZBIOCgZvZmZzZXQYAiABKARCKqoC",
-            "J0RvbGl0dGxlLkV2ZW50cy5SZWxhdGl2aXR5Lk1pY3Jvc2VydmljZWIGcHJv",
-            "dG8z"));
+            "aWNlIi4KDFRlbmFudE9mZnNldBIOCgZ0ZW5hbnQYASABKAwSDgoGb2Zmc2V0",
+            "GAIgASgEQiqqAidEb2xpdHRsZS5FdmVudHMuUmVsYXRpdml0eS5NaWNyb3Nl",
+            "cnZpY2ViBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::System.Protobuf.GuidReflection.Descriptor, },
+          new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Dolittle.Events.Relativity.Microservice.TenantOffset), global::Dolittle.Events.Relativity.Microservice.TenantOffset.Parser, new[]{ "Tenant", "Offset" }, null, null, null)
           }));
@@ -68,7 +67,7 @@ namespace Dolittle.Events.Relativity.Microservice {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public TenantOffset(TenantOffset other) : this() {
-      tenant_ = other.tenant_ != null ? other.tenant_.Clone() : null;
+      tenant_ = other.tenant_;
       offset_ = other.offset_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -80,12 +79,12 @@ namespace Dolittle.Events.Relativity.Microservice {
 
     /// <summary>Field number for the "tenant" field.</summary>
     public const int TenantFieldNumber = 1;
-    private global::System.Protobuf.guid tenant_;
+    private pb::ByteString tenant_ = pb::ByteString.Empty;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::System.Protobuf.guid Tenant {
+    public pb::ByteString Tenant {
       get { return tenant_; }
       set {
-        tenant_ = value;
+        tenant_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -113,7 +112,7 @@ namespace Dolittle.Events.Relativity.Microservice {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(Tenant, other.Tenant)) return false;
+      if (Tenant != other.Tenant) return false;
       if (Offset != other.Offset) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -121,7 +120,7 @@ namespace Dolittle.Events.Relativity.Microservice {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (tenant_ != null) hash ^= Tenant.GetHashCode();
+      if (Tenant.Length != 0) hash ^= Tenant.GetHashCode();
       if (Offset != 0UL) hash ^= Offset.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -136,9 +135,9 @@ namespace Dolittle.Events.Relativity.Microservice {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (tenant_ != null) {
+      if (Tenant.Length != 0) {
         output.WriteRawTag(10);
-        output.WriteMessage(Tenant);
+        output.WriteBytes(Tenant);
       }
       if (Offset != 0UL) {
         output.WriteRawTag(16);
@@ -152,8 +151,8 @@ namespace Dolittle.Events.Relativity.Microservice {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (tenant_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Tenant);
+      if (Tenant.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(Tenant);
       }
       if (Offset != 0UL) {
         size += 1 + pb::CodedOutputStream.ComputeUInt64Size(Offset);
@@ -169,11 +168,8 @@ namespace Dolittle.Events.Relativity.Microservice {
       if (other == null) {
         return;
       }
-      if (other.tenant_ != null) {
-        if (tenant_ == null) {
-          Tenant = new global::System.Protobuf.guid();
-        }
-        Tenant.MergeFrom(other.Tenant);
+      if (other.Tenant.Length != 0) {
+        Tenant = other.Tenant;
       }
       if (other.Offset != 0UL) {
         Offset = other.Offset;
@@ -190,10 +186,7 @@ namespace Dolittle.Events.Relativity.Microservice {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            if (tenant_ == null) {
-              Tenant = new global::System.Protobuf.guid();
-            }
-            input.ReadMessage(Tenant);
+            Tenant = input.ReadBytes();
             break;
           }
           case 16: {

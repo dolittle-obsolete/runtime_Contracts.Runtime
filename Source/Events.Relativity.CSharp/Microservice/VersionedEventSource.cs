@@ -26,16 +26,14 @@ namespace Dolittle.Events.Relativity.Microservice {
           string.Concat(
             "CjtFdmVudHMuUmVsYXRpdml0eS9NaWNyb3NlcnZpY2UvdmVyc2lvbmVkX2V2",
             "ZW50X3NvdXJjZS5wcm90bxInZG9saXR0bGUuZXZlbnRzLnJlbGF0aXZpdHku",
-            "bWljcm9zZXJ2aWNlGhFzeXN0ZW0vZ3VpZC5wcm90bxo5RXZlbnRzLlJlbGF0",
-            "aXZpdHkvTWljcm9zZXJ2aWNlL2V2ZW50X3NvdXJjZV92ZXJzaW9uLnByb3Rv",
-            "IqsBChRWZXJzaW9uZWRFdmVudFNvdXJjZRJMCgd2ZXJzaW9uGAEgASgLMjsu",
-            "ZG9saXR0bGUuZXZlbnRzLnJlbGF0aXZpdHkubWljcm9zZXJ2aWNlLkV2ZW50",
-            "U291cmNlVmVyc2lvbhIjCgtldmVudFNvdXJjZRgCIAEoCzIOLmRvbGl0dGxl",
-            "Lmd1aWQSIAoIYXJ0aWZhY3QYAyABKAsyDi5kb2xpdHRsZS5ndWlkQiqqAidE",
-            "b2xpdHRsZS5FdmVudHMuUmVsYXRpdml0eS5NaWNyb3NlcnZpY2ViBnByb3Rv",
-            "Mw=="));
+            "bWljcm9zZXJ2aWNlGjlFdmVudHMuUmVsYXRpdml0eS9NaWNyb3NlcnZpY2Uv",
+            "ZXZlbnRfc291cmNlX3ZlcnNpb24ucHJvdG8iiwEKFFZlcnNpb25lZEV2ZW50",
+            "U291cmNlEkwKB3ZlcnNpb24YASABKAsyOy5kb2xpdHRsZS5ldmVudHMucmVs",
+            "YXRpdml0eS5taWNyb3NlcnZpY2UuRXZlbnRTb3VyY2VWZXJzaW9uEhMKC2V2",
+            "ZW50U291cmNlGAIgASgMEhAKCGFydGlmYWN0GAMgASgMQiqqAidEb2xpdHRs",
+            "ZS5FdmVudHMuUmVsYXRpdml0eS5NaWNyb3NlcnZpY2ViBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::System.Protobuf.GuidReflection.Descriptor, global::Dolittle.Events.Relativity.Microservice.EventSourceVersionReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Dolittle.Events.Relativity.Microservice.EventSourceVersionReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Dolittle.Events.Relativity.Microservice.VersionedEventSource), global::Dolittle.Events.Relativity.Microservice.VersionedEventSource.Parser, new[]{ "Version", "EventSource", "Artifact" }, null, null, null)
           }));
@@ -73,8 +71,8 @@ namespace Dolittle.Events.Relativity.Microservice {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public VersionedEventSource(VersionedEventSource other) : this() {
       version_ = other.version_ != null ? other.version_.Clone() : null;
-      eventSource_ = other.eventSource_ != null ? other.eventSource_.Clone() : null;
-      artifact_ = other.artifact_ != null ? other.artifact_.Clone() : null;
+      eventSource_ = other.eventSource_;
+      artifact_ = other.artifact_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -96,23 +94,23 @@ namespace Dolittle.Events.Relativity.Microservice {
 
     /// <summary>Field number for the "eventSource" field.</summary>
     public const int EventSourceFieldNumber = 2;
-    private global::System.Protobuf.guid eventSource_;
+    private pb::ByteString eventSource_ = pb::ByteString.Empty;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::System.Protobuf.guid EventSource {
+    public pb::ByteString EventSource {
       get { return eventSource_; }
       set {
-        eventSource_ = value;
+        eventSource_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
     /// <summary>Field number for the "artifact" field.</summary>
     public const int ArtifactFieldNumber = 3;
-    private global::System.Protobuf.guid artifact_;
+    private pb::ByteString artifact_ = pb::ByteString.Empty;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::System.Protobuf.guid Artifact {
+    public pb::ByteString Artifact {
       get { return artifact_; }
       set {
-        artifact_ = value;
+        artifact_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -130,8 +128,8 @@ namespace Dolittle.Events.Relativity.Microservice {
         return true;
       }
       if (!object.Equals(Version, other.Version)) return false;
-      if (!object.Equals(EventSource, other.EventSource)) return false;
-      if (!object.Equals(Artifact, other.Artifact)) return false;
+      if (EventSource != other.EventSource) return false;
+      if (Artifact != other.Artifact) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -139,8 +137,8 @@ namespace Dolittle.Events.Relativity.Microservice {
     public override int GetHashCode() {
       int hash = 1;
       if (version_ != null) hash ^= Version.GetHashCode();
-      if (eventSource_ != null) hash ^= EventSource.GetHashCode();
-      if (artifact_ != null) hash ^= Artifact.GetHashCode();
+      if (EventSource.Length != 0) hash ^= EventSource.GetHashCode();
+      if (Artifact.Length != 0) hash ^= Artifact.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -158,13 +156,13 @@ namespace Dolittle.Events.Relativity.Microservice {
         output.WriteRawTag(10);
         output.WriteMessage(Version);
       }
-      if (eventSource_ != null) {
+      if (EventSource.Length != 0) {
         output.WriteRawTag(18);
-        output.WriteMessage(EventSource);
+        output.WriteBytes(EventSource);
       }
-      if (artifact_ != null) {
+      if (Artifact.Length != 0) {
         output.WriteRawTag(26);
-        output.WriteMessage(Artifact);
+        output.WriteBytes(Artifact);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -177,11 +175,11 @@ namespace Dolittle.Events.Relativity.Microservice {
       if (version_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Version);
       }
-      if (eventSource_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(EventSource);
+      if (EventSource.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(EventSource);
       }
-      if (artifact_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Artifact);
+      if (Artifact.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(Artifact);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -200,17 +198,11 @@ namespace Dolittle.Events.Relativity.Microservice {
         }
         Version.MergeFrom(other.Version);
       }
-      if (other.eventSource_ != null) {
-        if (eventSource_ == null) {
-          EventSource = new global::System.Protobuf.guid();
-        }
-        EventSource.MergeFrom(other.EventSource);
+      if (other.EventSource.Length != 0) {
+        EventSource = other.EventSource;
       }
-      if (other.artifact_ != null) {
-        if (artifact_ == null) {
-          Artifact = new global::System.Protobuf.guid();
-        }
-        Artifact.MergeFrom(other.Artifact);
+      if (other.Artifact.Length != 0) {
+        Artifact = other.Artifact;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -231,17 +223,11 @@ namespace Dolittle.Events.Relativity.Microservice {
             break;
           }
           case 18: {
-            if (eventSource_ == null) {
-              EventSource = new global::System.Protobuf.guid();
-            }
-            input.ReadMessage(EventSource);
+            EventSource = input.ReadBytes();
             break;
           }
           case 26: {
-            if (artifact_ == null) {
-              Artifact = new global::System.Protobuf.guid();
-            }
-            input.ReadMessage(Artifact);
+            Artifact = input.ReadBytes();
             break;
           }
         }

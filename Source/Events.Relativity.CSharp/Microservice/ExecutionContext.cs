@@ -26,17 +26,15 @@ namespace Dolittle.Events.Relativity.Microservice {
           string.Concat(
             "CjZFdmVudHMuUmVsYXRpdml0eS9NaWNyb3NlcnZpY2UvZXhlY3V0aW9uX2Nv",
             "bnRleHQucHJvdG8SJ2RvbGl0dGxlLmV2ZW50cy5yZWxhdGl2aXR5Lm1pY3Jv",
-            "c2VydmljZRoRc3lzdGVtL2d1aWQucHJvdG8aKkV2ZW50cy5SZWxhdGl2aXR5",
-            "L01pY3Jvc2VydmljZS9jbGFpbS5wcm90byKMAgoQRXhlY3V0aW9uQ29udGV4",
-            "dBIjCgthcHBsaWNhdGlvbhgBIAEoCzIOLmRvbGl0dGxlLmd1aWQSJgoOYm91",
-            "bmRlZENvbnRleHQYAiABKAsyDi5kb2xpdHRsZS5ndWlkEh4KBnRlbmFudBgD",
-            "IAEoCzIOLmRvbGl0dGxlLmd1aWQSJQoNY29ycmVsYXRpb25JZBgEIAEoCzIO",
-            "LmRvbGl0dGxlLmd1aWQSEwoLZW52aXJvbm1lbnQYBSABKAkSPgoGY2xhaW1z",
-            "GAYgAygLMi4uZG9saXR0bGUuZXZlbnRzLnJlbGF0aXZpdHkubWljcm9zZXJ2",
-            "aWNlLkNsYWltEg8KB2N1bHR1cmUYByABKAlCKqoCJ0RvbGl0dGxlLkV2ZW50",
-            "cy5SZWxhdGl2aXR5Lk1pY3Jvc2VydmljZWIGcHJvdG8z"));
+            "c2VydmljZRoqRXZlbnRzLlJlbGF0aXZpdHkvTWljcm9zZXJ2aWNlL2NsYWlt",
+            "LnByb3RvIswBChBFeGVjdXRpb25Db250ZXh0EhMKC2FwcGxpY2F0aW9uGAEg",
+            "ASgMEhYKDmJvdW5kZWRDb250ZXh0GAIgASgMEg4KBnRlbmFudBgDIAEoDBIV",
+            "Cg1jb3JyZWxhdGlvbklkGAQgASgMEhMKC2Vudmlyb25tZW50GAUgASgJEj4K",
+            "BmNsYWltcxgGIAMoCzIuLmRvbGl0dGxlLmV2ZW50cy5yZWxhdGl2aXR5Lm1p",
+            "Y3Jvc2VydmljZS5DbGFpbRIPCgdjdWx0dXJlGAcgASgJQiqqAidEb2xpdHRs",
+            "ZS5FdmVudHMuUmVsYXRpdml0eS5NaWNyb3NlcnZpY2ViBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::System.Protobuf.GuidReflection.Descriptor, global::Dolittle.Events.Relativity.Microservice.ClaimReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Dolittle.Events.Relativity.Microservice.ClaimReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Dolittle.Events.Relativity.Microservice.ExecutionContext), global::Dolittle.Events.Relativity.Microservice.ExecutionContext.Parser, new[]{ "Application", "BoundedContext", "Tenant", "CorrelationId", "Environment", "Claims", "Culture" }, null, null, null)
           }));
@@ -73,10 +71,10 @@ namespace Dolittle.Events.Relativity.Microservice {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ExecutionContext(ExecutionContext other) : this() {
-      application_ = other.application_ != null ? other.application_.Clone() : null;
-      boundedContext_ = other.boundedContext_ != null ? other.boundedContext_.Clone() : null;
-      tenant_ = other.tenant_ != null ? other.tenant_.Clone() : null;
-      correlationId_ = other.correlationId_ != null ? other.correlationId_.Clone() : null;
+      application_ = other.application_;
+      boundedContext_ = other.boundedContext_;
+      tenant_ = other.tenant_;
+      correlationId_ = other.correlationId_;
       environment_ = other.environment_;
       claims_ = other.claims_.Clone();
       culture_ = other.culture_;
@@ -90,45 +88,45 @@ namespace Dolittle.Events.Relativity.Microservice {
 
     /// <summary>Field number for the "application" field.</summary>
     public const int ApplicationFieldNumber = 1;
-    private global::System.Protobuf.guid application_;
+    private pb::ByteString application_ = pb::ByteString.Empty;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::System.Protobuf.guid Application {
+    public pb::ByteString Application {
       get { return application_; }
       set {
-        application_ = value;
+        application_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
     /// <summary>Field number for the "boundedContext" field.</summary>
     public const int BoundedContextFieldNumber = 2;
-    private global::System.Protobuf.guid boundedContext_;
+    private pb::ByteString boundedContext_ = pb::ByteString.Empty;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::System.Protobuf.guid BoundedContext {
+    public pb::ByteString BoundedContext {
       get { return boundedContext_; }
       set {
-        boundedContext_ = value;
+        boundedContext_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
     /// <summary>Field number for the "tenant" field.</summary>
     public const int TenantFieldNumber = 3;
-    private global::System.Protobuf.guid tenant_;
+    private pb::ByteString tenant_ = pb::ByteString.Empty;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::System.Protobuf.guid Tenant {
+    public pb::ByteString Tenant {
       get { return tenant_; }
       set {
-        tenant_ = value;
+        tenant_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
     /// <summary>Field number for the "correlationId" field.</summary>
     public const int CorrelationIdFieldNumber = 4;
-    private global::System.Protobuf.guid correlationId_;
+    private pb::ByteString correlationId_ = pb::ByteString.Empty;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::System.Protobuf.guid CorrelationId {
+    public pb::ByteString CorrelationId {
       get { return correlationId_; }
       set {
-        correlationId_ = value;
+        correlationId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -177,10 +175,10 @@ namespace Dolittle.Events.Relativity.Microservice {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(Application, other.Application)) return false;
-      if (!object.Equals(BoundedContext, other.BoundedContext)) return false;
-      if (!object.Equals(Tenant, other.Tenant)) return false;
-      if (!object.Equals(CorrelationId, other.CorrelationId)) return false;
+      if (Application != other.Application) return false;
+      if (BoundedContext != other.BoundedContext) return false;
+      if (Tenant != other.Tenant) return false;
+      if (CorrelationId != other.CorrelationId) return false;
       if (Environment != other.Environment) return false;
       if(!claims_.Equals(other.claims_)) return false;
       if (Culture != other.Culture) return false;
@@ -190,10 +188,10 @@ namespace Dolittle.Events.Relativity.Microservice {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (application_ != null) hash ^= Application.GetHashCode();
-      if (boundedContext_ != null) hash ^= BoundedContext.GetHashCode();
-      if (tenant_ != null) hash ^= Tenant.GetHashCode();
-      if (correlationId_ != null) hash ^= CorrelationId.GetHashCode();
+      if (Application.Length != 0) hash ^= Application.GetHashCode();
+      if (BoundedContext.Length != 0) hash ^= BoundedContext.GetHashCode();
+      if (Tenant.Length != 0) hash ^= Tenant.GetHashCode();
+      if (CorrelationId.Length != 0) hash ^= CorrelationId.GetHashCode();
       if (Environment.Length != 0) hash ^= Environment.GetHashCode();
       hash ^= claims_.GetHashCode();
       if (Culture.Length != 0) hash ^= Culture.GetHashCode();
@@ -210,21 +208,21 @@ namespace Dolittle.Events.Relativity.Microservice {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (application_ != null) {
+      if (Application.Length != 0) {
         output.WriteRawTag(10);
-        output.WriteMessage(Application);
+        output.WriteBytes(Application);
       }
-      if (boundedContext_ != null) {
+      if (BoundedContext.Length != 0) {
         output.WriteRawTag(18);
-        output.WriteMessage(BoundedContext);
+        output.WriteBytes(BoundedContext);
       }
-      if (tenant_ != null) {
+      if (Tenant.Length != 0) {
         output.WriteRawTag(26);
-        output.WriteMessage(Tenant);
+        output.WriteBytes(Tenant);
       }
-      if (correlationId_ != null) {
+      if (CorrelationId.Length != 0) {
         output.WriteRawTag(34);
-        output.WriteMessage(CorrelationId);
+        output.WriteBytes(CorrelationId);
       }
       if (Environment.Length != 0) {
         output.WriteRawTag(42);
@@ -243,17 +241,17 @@ namespace Dolittle.Events.Relativity.Microservice {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (application_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Application);
+      if (Application.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(Application);
       }
-      if (boundedContext_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(BoundedContext);
+      if (BoundedContext.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(BoundedContext);
       }
-      if (tenant_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Tenant);
+      if (Tenant.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(Tenant);
       }
-      if (correlationId_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CorrelationId);
+      if (CorrelationId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(CorrelationId);
       }
       if (Environment.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Environment);
@@ -273,29 +271,17 @@ namespace Dolittle.Events.Relativity.Microservice {
       if (other == null) {
         return;
       }
-      if (other.application_ != null) {
-        if (application_ == null) {
-          Application = new global::System.Protobuf.guid();
-        }
-        Application.MergeFrom(other.Application);
+      if (other.Application.Length != 0) {
+        Application = other.Application;
       }
-      if (other.boundedContext_ != null) {
-        if (boundedContext_ == null) {
-          BoundedContext = new global::System.Protobuf.guid();
-        }
-        BoundedContext.MergeFrom(other.BoundedContext);
+      if (other.BoundedContext.Length != 0) {
+        BoundedContext = other.BoundedContext;
       }
-      if (other.tenant_ != null) {
-        if (tenant_ == null) {
-          Tenant = new global::System.Protobuf.guid();
-        }
-        Tenant.MergeFrom(other.Tenant);
+      if (other.Tenant.Length != 0) {
+        Tenant = other.Tenant;
       }
-      if (other.correlationId_ != null) {
-        if (correlationId_ == null) {
-          CorrelationId = new global::System.Protobuf.guid();
-        }
-        CorrelationId.MergeFrom(other.CorrelationId);
+      if (other.CorrelationId.Length != 0) {
+        CorrelationId = other.CorrelationId;
       }
       if (other.Environment.Length != 0) {
         Environment = other.Environment;
@@ -316,31 +302,19 @@ namespace Dolittle.Events.Relativity.Microservice {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            if (application_ == null) {
-              Application = new global::System.Protobuf.guid();
-            }
-            input.ReadMessage(Application);
+            Application = input.ReadBytes();
             break;
           }
           case 18: {
-            if (boundedContext_ == null) {
-              BoundedContext = new global::System.Protobuf.guid();
-            }
-            input.ReadMessage(BoundedContext);
+            BoundedContext = input.ReadBytes();
             break;
           }
           case 26: {
-            if (tenant_ == null) {
-              Tenant = new global::System.Protobuf.guid();
-            }
-            input.ReadMessage(Tenant);
+            Tenant = input.ReadBytes();
             break;
           }
           case 34: {
-            if (correlationId_ == null) {
-              CorrelationId = new global::System.Protobuf.guid();
-            }
-            input.ReadMessage(CorrelationId);
+            CorrelationId = input.ReadBytes();
             break;
           }
           case 42: {

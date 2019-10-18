@@ -5,7 +5,6 @@
 
 syntax = "proto3";
 
-import "system/guid.proto";
 import "Events.Relativity/Microservice/artifact.proto";
 import "Events.Relativity/Microservice/tenant_offset.proto";
 
@@ -15,9 +14,9 @@ option csharp_namespace = "Dolittle.Events.Relativity.Microservice";
 
 // Open tunnel is the message sent when opening a tunnel from a singularity towards an event horizon
 message OpenTunnel {
-    guid application = 1;
-    guid boundedContext = 2;
-    guid clientId = 3;
+    bytes application = 1;
+    bytes boundedContext = 2;
+    bytes clientId = 3;
     repeated TenantOffset offsets = 4;
     repeated Artifact events = 5;
 }

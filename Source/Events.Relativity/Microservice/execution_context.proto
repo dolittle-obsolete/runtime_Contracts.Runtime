@@ -6,17 +6,16 @@ syntax = "proto3";
 
 package dolittle.events.relativity.microservice;
 
-import "system/guid.proto";
 import "Events.Relativity/Microservice/claim.proto";
 
 option csharp_namespace = "Dolittle.Events.Relativity.Microservice";
 
 // Represents the execution context
 message ExecutionContext {
-    guid application = 1;
-    guid boundedContext = 2;
-    guid tenant = 3;
-    guid correlationId = 4;
+    bytes application = 1;
+    bytes boundedContext = 2;
+    bytes tenant = 3;
+    bytes correlationId = 4;
     string environment = 5;
     repeated Claim claims = 6;
     string culture = 7;

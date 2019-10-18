@@ -25,12 +25,12 @@ namespace Dolittle.Applications {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ch5BcHBsaWNhdGlvbnMvY2xpZW50X2luZm8ucHJvdG8SFWRvbGl0dGxlLmFw",
-            "cGxpY2F0aW9ucxoRc3lzdGVtL2d1aWQucHJvdG8icwoKQ2xpZW50SW5mbxIg",
-            "CghjbGllbnRJZBgBIAEoCzIOLmRvbGl0dGxlLmd1aWQSDAoEaG9zdBgCIAEo",
-            "CRIMCgRwb3J0GAMgASgFEg8KB3J1bnRpbWUYBCABKAkSFgoOc2VydmljZXNC",
-            "eU5hbWUYBSADKAlCGKoCFURvbGl0dGxlLkFwcGxpY2F0aW9uc2IGcHJvdG8z"));
+            "cGxpY2F0aW9ucyJjCgpDbGllbnRJbmZvEhAKCGNsaWVudElkGAEgASgMEgwK",
+            "BGhvc3QYAiABKAkSDAoEcG9ydBgDIAEoBRIPCgdydW50aW1lGAQgASgJEhYK",
+            "DnNlcnZpY2VzQnlOYW1lGAUgAygJQhiqAhVEb2xpdHRsZS5BcHBsaWNhdGlv",
+            "bnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::System.Protobuf.GuidReflection.Descriptor, },
+          new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Dolittle.Applications.ClientInfo), global::Dolittle.Applications.ClientInfo.Parser, new[]{ "ClientId", "Host", "Port", "Runtime", "ServicesByName" }, null, null, null)
           }));
@@ -64,7 +64,7 @@ namespace Dolittle.Applications {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ClientInfo(ClientInfo other) : this() {
-      clientId_ = other.clientId_ != null ? other.clientId_.Clone() : null;
+      clientId_ = other.clientId_;
       host_ = other.host_;
       port_ = other.port_;
       runtime_ = other.runtime_;
@@ -79,12 +79,12 @@ namespace Dolittle.Applications {
 
     /// <summary>Field number for the "clientId" field.</summary>
     public const int ClientIdFieldNumber = 1;
-    private global::System.Protobuf.guid clientId_;
+    private pb::ByteString clientId_ = pb::ByteString.Empty;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::System.Protobuf.guid ClientId {
+    public pb::ByteString ClientId {
       get { return clientId_; }
       set {
-        clientId_ = value;
+        clientId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -144,7 +144,7 @@ namespace Dolittle.Applications {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(ClientId, other.ClientId)) return false;
+      if (ClientId != other.ClientId) return false;
       if (Host != other.Host) return false;
       if (Port != other.Port) return false;
       if (Runtime != other.Runtime) return false;
@@ -155,7 +155,7 @@ namespace Dolittle.Applications {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (clientId_ != null) hash ^= ClientId.GetHashCode();
+      if (ClientId.Length != 0) hash ^= ClientId.GetHashCode();
       if (Host.Length != 0) hash ^= Host.GetHashCode();
       if (Port != 0) hash ^= Port.GetHashCode();
       if (Runtime.Length != 0) hash ^= Runtime.GetHashCode();
@@ -173,9 +173,9 @@ namespace Dolittle.Applications {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (clientId_ != null) {
+      if (ClientId.Length != 0) {
         output.WriteRawTag(10);
-        output.WriteMessage(ClientId);
+        output.WriteBytes(ClientId);
       }
       if (Host.Length != 0) {
         output.WriteRawTag(18);
@@ -198,8 +198,8 @@ namespace Dolittle.Applications {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (clientId_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ClientId);
+      if (ClientId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(ClientId);
       }
       if (Host.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Host);
@@ -222,11 +222,8 @@ namespace Dolittle.Applications {
       if (other == null) {
         return;
       }
-      if (other.clientId_ != null) {
-        if (clientId_ == null) {
-          ClientId = new global::System.Protobuf.guid();
-        }
-        ClientId.MergeFrom(other.ClientId);
+      if (other.ClientId.Length != 0) {
+        ClientId = other.ClientId;
       }
       if (other.Host.Length != 0) {
         Host = other.Host;
@@ -250,10 +247,7 @@ namespace Dolittle.Applications {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            if (clientId_ == null) {
-              ClientId = new global::System.Protobuf.guid();
-            }
-            input.ReadMessage(ClientId);
+            ClientId = input.ReadBytes();
             break;
           }
           case 18: {

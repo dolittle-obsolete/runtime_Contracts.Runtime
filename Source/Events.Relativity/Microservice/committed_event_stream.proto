@@ -5,7 +5,6 @@
 
 syntax = "proto3";
 
-import "system/guid.proto";
 import "Events.Relativity/Microservice/versioned_event_source.proto";
 import "Events.Relativity/Microservice/event_envelope.proto";
 
@@ -17,8 +16,8 @@ option csharp_namespace = "Dolittle.Events.Relativity.Microservice";
 message CommittedEventStream {
     VersionedEventSource source = 1;
     uint64 sequence = 2;
-    guid id = 3;
+    bytes id = 3;
     int64 timeStamp = 4;
-    guid correlationId = 5;
+    bytes correlationId = 5;
     repeated EventEnvelope events = 6;
 }

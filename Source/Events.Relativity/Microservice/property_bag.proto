@@ -5,7 +5,7 @@
 
 syntax = "proto3";
 
-import "system/value.proto";
+import "Events.Relativity/value.proto";
 
 package dolittle.events.relativity.microservice;
 
@@ -13,5 +13,5 @@ option csharp_namespace = "Dolittle.Events.Relativity.Microservice";
 
 // Represents the property bag
 message PropertyBag {
-    map<string, system.Value> values = 1;
+    map<string, Value> values = 1;
 }

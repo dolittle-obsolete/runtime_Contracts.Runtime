@@ -26,21 +26,20 @@ namespace Dolittle.Events.Relativity.Microservice {
           string.Concat(
             "CjNFdmVudHMuUmVsYXRpdml0eS9NaWNyb3NlcnZpY2UvZXZlbnRfbWV0YWRh",
             "dGEucHJvdG8SJ2RvbGl0dGxlLmV2ZW50cy5yZWxhdGl2aXR5Lm1pY3Jvc2Vy",
-            "dmljZRoRc3lzdGVtL2d1aWQucHJvdG8aLUV2ZW50cy5SZWxhdGl2aXR5L01p",
-            "Y3Jvc2VydmljZS9hcnRpZmFjdC5wcm90bxo7RXZlbnRzLlJlbGF0aXZpdHkv",
-            "TWljcm9zZXJ2aWNlL3ZlcnNpb25lZF9ldmVudF9zb3VyY2UucHJvdG8aNUV2",
-            "ZW50cy5SZWxhdGl2aXR5L01pY3Jvc2VydmljZS9vcmlnaW5hbF9jb250ZXh0",
-            "LnByb3RvItACCg1FdmVudE1ldGFkYXRhEh8KB2V2ZW50SWQYASABKAsyDi5k",
-            "b2xpdHRsZS5ndWlkEk0KBnNvdXJjZRgCIAEoCzI9LmRvbGl0dGxlLmV2ZW50",
-            "cy5yZWxhdGl2aXR5Lm1pY3Jvc2VydmljZS5WZXJzaW9uZWRFdmVudFNvdXJj",
-            "ZRIlCg1jb3JyZWxhdGlvbklkGAMgASgLMg4uZG9saXR0bGUuZ3VpZBJDCghh",
-            "cnRpZmFjdBgEIAEoCzIxLmRvbGl0dGxlLmV2ZW50cy5yZWxhdGl2aXR5Lm1p",
-            "Y3Jvc2VydmljZS5BcnRpZmFjdBIQCghvY2N1cnJlZBgFIAEoAxJRCg9vcmln",
-            "aW5hbENvbnRleHQYBiABKAsyOC5kb2xpdHRsZS5ldmVudHMucmVsYXRpdml0",
-            "eS5taWNyb3NlcnZpY2UuT3JpZ2luYWxDb250ZXh0QiqqAidEb2xpdHRsZS5F",
-            "dmVudHMuUmVsYXRpdml0eS5NaWNyb3NlcnZpY2ViBnByb3RvMw=="));
+            "dmljZRotRXZlbnRzLlJlbGF0aXZpdHkvTWljcm9zZXJ2aWNlL2FydGlmYWN0",
+            "LnByb3RvGjtFdmVudHMuUmVsYXRpdml0eS9NaWNyb3NlcnZpY2UvdmVyc2lv",
+            "bmVkX2V2ZW50X3NvdXJjZS5wcm90bxo1RXZlbnRzLlJlbGF0aXZpdHkvTWlj",
+            "cm9zZXJ2aWNlL29yaWdpbmFsX2NvbnRleHQucHJvdG8isAIKDUV2ZW50TWV0",
+            "YWRhdGESDwoHZXZlbnRJZBgBIAEoDBJNCgZzb3VyY2UYAiABKAsyPS5kb2xp",
+            "dHRsZS5ldmVudHMucmVsYXRpdml0eS5taWNyb3NlcnZpY2UuVmVyc2lvbmVk",
+            "RXZlbnRTb3VyY2USFQoNY29ycmVsYXRpb25JZBgDIAEoDBJDCghhcnRpZmFj",
+            "dBgEIAEoCzIxLmRvbGl0dGxlLmV2ZW50cy5yZWxhdGl2aXR5Lm1pY3Jvc2Vy",
+            "dmljZS5BcnRpZmFjdBIQCghvY2N1cnJlZBgFIAEoAxJRCg9vcmlnaW5hbENv",
+            "bnRleHQYBiABKAsyOC5kb2xpdHRsZS5ldmVudHMucmVsYXRpdml0eS5taWNy",
+            "b3NlcnZpY2UuT3JpZ2luYWxDb250ZXh0QiqqAidEb2xpdHRsZS5FdmVudHMu",
+            "UmVsYXRpdml0eS5NaWNyb3NlcnZpY2ViBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::System.Protobuf.GuidReflection.Descriptor, global::Dolittle.Events.Relativity.Microservice.ArtifactReflection.Descriptor, global::Dolittle.Events.Relativity.Microservice.VersionedEventSourceReflection.Descriptor, global::Dolittle.Events.Relativity.Microservice.OriginalContextReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Dolittle.Events.Relativity.Microservice.ArtifactReflection.Descriptor, global::Dolittle.Events.Relativity.Microservice.VersionedEventSourceReflection.Descriptor, global::Dolittle.Events.Relativity.Microservice.OriginalContextReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Dolittle.Events.Relativity.Microservice.EventMetadata), global::Dolittle.Events.Relativity.Microservice.EventMetadata.Parser, new[]{ "EventId", "Source", "CorrelationId", "Artifact", "Occurred", "OriginalContext" }, null, null, null)
           }));
@@ -77,9 +76,9 @@ namespace Dolittle.Events.Relativity.Microservice {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public EventMetadata(EventMetadata other) : this() {
-      eventId_ = other.eventId_ != null ? other.eventId_.Clone() : null;
+      eventId_ = other.eventId_;
       source_ = other.source_ != null ? other.source_.Clone() : null;
-      correlationId_ = other.correlationId_ != null ? other.correlationId_.Clone() : null;
+      correlationId_ = other.correlationId_;
       artifact_ = other.artifact_ != null ? other.artifact_.Clone() : null;
       occurred_ = other.occurred_;
       originalContext_ = other.originalContext_ != null ? other.originalContext_.Clone() : null;
@@ -93,12 +92,12 @@ namespace Dolittle.Events.Relativity.Microservice {
 
     /// <summary>Field number for the "eventId" field.</summary>
     public const int EventIdFieldNumber = 1;
-    private global::System.Protobuf.guid eventId_;
+    private pb::ByteString eventId_ = pb::ByteString.Empty;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::System.Protobuf.guid EventId {
+    public pb::ByteString EventId {
       get { return eventId_; }
       set {
-        eventId_ = value;
+        eventId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -115,12 +114,12 @@ namespace Dolittle.Events.Relativity.Microservice {
 
     /// <summary>Field number for the "correlationId" field.</summary>
     public const int CorrelationIdFieldNumber = 3;
-    private global::System.Protobuf.guid correlationId_;
+    private pb::ByteString correlationId_ = pb::ByteString.Empty;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::System.Protobuf.guid CorrelationId {
+    public pb::ByteString CorrelationId {
       get { return correlationId_; }
       set {
-        correlationId_ = value;
+        correlationId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -170,9 +169,9 @@ namespace Dolittle.Events.Relativity.Microservice {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(EventId, other.EventId)) return false;
+      if (EventId != other.EventId) return false;
       if (!object.Equals(Source, other.Source)) return false;
-      if (!object.Equals(CorrelationId, other.CorrelationId)) return false;
+      if (CorrelationId != other.CorrelationId) return false;
       if (!object.Equals(Artifact, other.Artifact)) return false;
       if (Occurred != other.Occurred) return false;
       if (!object.Equals(OriginalContext, other.OriginalContext)) return false;
@@ -182,9 +181,9 @@ namespace Dolittle.Events.Relativity.Microservice {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (eventId_ != null) hash ^= EventId.GetHashCode();
+      if (EventId.Length != 0) hash ^= EventId.GetHashCode();
       if (source_ != null) hash ^= Source.GetHashCode();
-      if (correlationId_ != null) hash ^= CorrelationId.GetHashCode();
+      if (CorrelationId.Length != 0) hash ^= CorrelationId.GetHashCode();
       if (artifact_ != null) hash ^= Artifact.GetHashCode();
       if (Occurred != 0L) hash ^= Occurred.GetHashCode();
       if (originalContext_ != null) hash ^= OriginalContext.GetHashCode();
@@ -201,17 +200,17 @@ namespace Dolittle.Events.Relativity.Microservice {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (eventId_ != null) {
+      if (EventId.Length != 0) {
         output.WriteRawTag(10);
-        output.WriteMessage(EventId);
+        output.WriteBytes(EventId);
       }
       if (source_ != null) {
         output.WriteRawTag(18);
         output.WriteMessage(Source);
       }
-      if (correlationId_ != null) {
+      if (CorrelationId.Length != 0) {
         output.WriteRawTag(26);
-        output.WriteMessage(CorrelationId);
+        output.WriteBytes(CorrelationId);
       }
       if (artifact_ != null) {
         output.WriteRawTag(34);
@@ -233,14 +232,14 @@ namespace Dolittle.Events.Relativity.Microservice {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (eventId_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(EventId);
+      if (EventId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(EventId);
       }
       if (source_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Source);
       }
-      if (correlationId_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CorrelationId);
+      if (CorrelationId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(CorrelationId);
       }
       if (artifact_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Artifact);
@@ -262,11 +261,8 @@ namespace Dolittle.Events.Relativity.Microservice {
       if (other == null) {
         return;
       }
-      if (other.eventId_ != null) {
-        if (eventId_ == null) {
-          EventId = new global::System.Protobuf.guid();
-        }
-        EventId.MergeFrom(other.EventId);
+      if (other.EventId.Length != 0) {
+        EventId = other.EventId;
       }
       if (other.source_ != null) {
         if (source_ == null) {
@@ -274,11 +270,8 @@ namespace Dolittle.Events.Relativity.Microservice {
         }
         Source.MergeFrom(other.Source);
       }
-      if (other.correlationId_ != null) {
-        if (correlationId_ == null) {
-          CorrelationId = new global::System.Protobuf.guid();
-        }
-        CorrelationId.MergeFrom(other.CorrelationId);
+      if (other.CorrelationId.Length != 0) {
+        CorrelationId = other.CorrelationId;
       }
       if (other.artifact_ != null) {
         if (artifact_ == null) {
@@ -307,10 +300,7 @@ namespace Dolittle.Events.Relativity.Microservice {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            if (eventId_ == null) {
-              EventId = new global::System.Protobuf.guid();
-            }
-            input.ReadMessage(EventId);
+            EventId = input.ReadBytes();
             break;
           }
           case 18: {
@@ -321,10 +311,7 @@ namespace Dolittle.Events.Relativity.Microservice {
             break;
           }
           case 26: {
-            if (correlationId_ == null) {
-              CorrelationId = new global::System.Protobuf.guid();
-            }
-            input.ReadMessage(CorrelationId);
+            CorrelationId = input.ReadBytes();
             break;
           }
           case 34: {
