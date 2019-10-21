@@ -4,9 +4,9 @@
  *--------------------------------------------------------------------------------------------*/
 syntax = "proto3";
 
-package dolittle.applications.runtime;
+package dolittle.heads.runtime;
 
-option csharp_namespace = "Dolittle.Applications.Runtime";
+option csharp_namespace = "Dolittle.Heads.Runtime";
 
 message ClientInfo {
     bytes clientId = 1;

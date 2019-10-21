@@ -4,12 +4,12 @@
  *--------------------------------------------------------------------------------------------*/
 syntax = "proto3";
 
-import "Applications/client_info.proto";
+import "Heads/ClientInfo.proto";
 import "google/protobuf/empty.proto";
 
-package dolittle.applications.runtime;
+package dolittle.heads.runtime;
 
-option csharp_namespace = "Dolittle.Applications.Runtime";
+option csharp_namespace = "Dolittle.Heads.Runtime";
 
 message ConnectionResult {
     string status = 1;
