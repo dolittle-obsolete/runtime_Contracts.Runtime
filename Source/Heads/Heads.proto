@@ -4,7 +4,7 @@
  *--------------------------------------------------------------------------------------------*/
 syntax = "proto3";
 
-import "Heads/ClientInfo.proto";
+import "Heads/HeadInfo.proto";
 import "google/protobuf/empty.proto";
 
 package dolittle.heads.runtime;
@@ -15,7 +15,7 @@ message ConnectionResult {
     string status = 1;
 }
 
-// Represents the Client service
-service Clients {
-    rpc Connect(ClientInfo) returns(stream google.protobuf.Empty) {}
+// Represents the Head service
+service Heads {
+    rpc Connect(HeadInfo) returns(stream google.protobuf.Empty) {}
 }
