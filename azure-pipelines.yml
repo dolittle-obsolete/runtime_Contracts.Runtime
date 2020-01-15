@@ -10,3 +10,7 @@ resources:
 
 jobs:
 - template: Source/DotNet/pipeline.yml@templates
+  parameters:
+      cascades:
+          - 'dolittle-runtime/Runtime'
+          - 'dolittle-runtime/DotNET.SDK'
