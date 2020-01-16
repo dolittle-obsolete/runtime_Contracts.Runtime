@@ -1,0 +1,16 @@
+// Copyright (c) Dolittle. All rights reserved.
+// Licensed under the MIT license. See LICENSE file in the project root for full license information.
+
+syntax = "proto3";
+
+import "Events/CommittedEvent.proto";
+
+package dolittle.events.runtime;
+
+option csharp_namespace = "Dolittle.Events.Runtime";
+
+message CommittedAggregateEvents {
+    bytes aggregateId = 1;
+    int32 version = 2;
+    repeated dolittle.events.runtime.CommittedEvent Events=3;
+}
